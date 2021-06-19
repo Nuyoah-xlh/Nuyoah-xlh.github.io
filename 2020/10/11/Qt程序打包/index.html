@@ -16,9 +16,14 @@
 
   <!-- 页面元数据 -->
   
-  <title>tags - 肖林航的博客</title>
+  <title>Qt程序简单打包 - 肖林航的博客</title>
   
 
+  
+    <meta name="description" content="
+1、执行released
+2、找到生成目录
+3、复制到新的文件夹里并操作">
   
 
   <!-- feed -->
@@ -678,7 +683,7 @@
 
   
   
-      <div class='cover-wrapper page featured' style="display: none;">
+      <div class='cover-wrapper post featured' style="display: none;">
         <canvas id="header_canvas" style="position:absolute;bottom:0;z-index: 1;" width="900" height="350"></canvas>
         
           <div class='cover-backstretch'></div>
@@ -766,8 +771,8 @@
 
 
 <div id="pjax-data" style="display: none">
-  <div id="pjax-ispage">false</div>
-  <div id="pjax-pageTitle"></div>
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">Qt程序简单打包</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -1036,6 +1041,20 @@
 
 
 
+  <section class="widget toc-wrapper shadow floatable desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fal fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%89%A7%E8%A1%8Creleased"><span class="toc-text">1、执行released</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%89%BE%E5%88%B0%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95"><span class="toc-text">2、找到生成目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%A4%8D%E5%88%B6%E5%88%B0%E6%96%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E5%B9%B6%E6%93%8D%E4%BD%9C"><span class="toc-text">3、复制到新的文件夹里并操作</span></a></li></ol>
+    </div>
+  </section>
+
 
   
 
@@ -1044,18 +1063,24 @@
 
 <div class='l_main'>
   <article
-  class="article post white-box reveal md shadow floatable article-type-page"
-  id="page" itemscope itemprop="blogPost">
+  class="article post white-box reveal md shadow floatable article-type-post"
+  id="post" itemscope itemprop="blogPost">
   
 
 
+  
+    
+      
+        <div class='headimg lazyload' data-bg='/img/001.jpg'></div>
+      
+    
   
   <div class="article-meta" id="top">
     
     
     
       <h1 class="title">
-        tags
+        Qt程序简单打包
       </h1>
       <div class='new-meta-box'>
         
@@ -1079,7 +1104,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fal fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jun 18, 2021</p>
+    <p>发布于：Oct 11, 2020</p>
   </a>
 </div>
 
@@ -1090,7 +1115,7 @@
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="tags" data-path="/tags/">
+      <div id="lc-pv" data-title="Qt程序简单打包" data-path="/2020/10/11/Qt%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85/">
         <i class="fal fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -1109,8 +1134,65 @@
   
 
   
+  <ul>
+<li><a href="#1%E6%89%A7%E8%A1%8Creleased">1、执行released</a></li>
+<li><a href="#2%E6%89%BE%E5%88%B0%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95">2、找到生成目录</a></li>
+<li><a href="#3%E5%A4%8D%E5%88%B6%E5%88%B0%E6%96%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E5%B9%B6%E6%93%8D%E4%BD%9C">3、复制到新的文件夹里并操作</a><span id="more"></span>
+<h2 id="1、执行released"><a href="#1、执行released" class="headerlink" title="1、执行released"></a>1、执行released</h2></li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/20201020210157514.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20201020210157514.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="执行released"></p>
+<h2 id="2、找到生成目录"><a href="#2、找到生成目录" class="headerlink" title="2、找到生成目录"></a>2、找到生成目录</h2><p><img src="https://img-blog.csdnimg.cn/20201020210358630.jpg#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20201020210358630.jpg#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="找到生成目录"></p>
+<p>进入这个文件夹，再进入它的子文件夹 release 里面，找到 Test.exe ，将这个exe 复制到一个新的单独的文件夹里用于发布。</p>
+<p><img src="https://img-blog.csdnimg.cn/20201020210647707.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20201020210647707.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="找到exe文件"></p>
+<h2 id="3、复制到新的文件夹里并操作"><a href="#3、复制到新的文件夹里并操作" class="headerlink" title="3、复制到新的文件夹里并操作"></a>3、复制到新的文件夹里并操作</h2><p><img src="https://img-blog.csdnimg.cn/20201020210647686.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20201020210647686.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="复制到新的文件夹里"><br>因为缺少相关dll文件，不能直接运行。需要继续操作：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201020210647749.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20201020210647749.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="找到windeployqt Test.exe打开"></p>
+<p>进入你之前新建的放置exe文件的文件夹</p>
+<p><img src="https://img-blog.csdnimg.cn/20201020210647685.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20201020210647685.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="进入你之前新建的放置exe文件的文件夹"></p>
+<p>输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">windeployqt Test.exe   //使用 windeployqt 工具命令</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20201020210647725.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20201020210647725.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="使用 windeployqt 工具命令"></p>
+<p>命令执行完成后即可打开exe文件</p>
+<p><img src="https://img-blog.csdnimg.cn/20201020210647742.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20201020210647742.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="所需文件集合完成，可直接打开exe文件"><br>到此，所需文件集合完成，可直接打开exe文件。</p>
+
   
   
+  
+  <div class='footer'>
+    
+    
+    
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fal fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="\2020\09\01\hello-world\" title="Hello World" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">Hello World</span><span class="excerpt">
+Quick Start
+
+Create a new post
+
+Run server
+
+Generate static ...</span></a></div></section></div>
+    
+    
+    <div class='copyright'>
+      <blockquote>
+        
+        
+        <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+        
+        
+        
+        <p>本文永久链接是：<a href=https://nuyoah-xlh.github.io/2020/10/11/Qt%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85/>https://nuyoah-xlh.github.io/2020/10/11/Qt%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85/</a></p>
+        
+        
+      </blockquote>
+    </div>
+    
+    
+  </div>
   
   
   
@@ -1120,10 +1202,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-18T23:45:35+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-19T15:15:03+08:00">
   <a class='notlink'>
     <i class="fal fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jun 18, 2021</p>
+    <p>更新于：Jun 19, 2021</p>
   </a>
 </div>
 
@@ -1142,7 +1224,10 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/tags/index.html&title=tags - 肖林航的博客&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/2020/10/11/Qt%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85/&title=Qt程序简单打包 - 肖林航的博客&summary=
+1、执行released
+2、找到生成目录
+3、复制到新的文件夹里并操作"
           
           >
           
@@ -1154,7 +1239,10 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/tags/index.html&title=tags - 肖林航的博客&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/2020/10/11/Qt%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85/&title=Qt程序简单打包 - 肖林航的博客&summary=
+1、执行released
+2、找到生成目录
+3、复制到新的文件夹里并操作"
           
           >
           
@@ -1166,7 +1254,10 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/tags/index.html&title=tags - 肖林航的博客&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/2020/10/11/Qt%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85/&title=Qt程序简单打包 - 肖林航的博客&summary=
+1、执行released
+2、找到生成目录
+3、复制到新的文件夹里并操作"
           
           >
           
@@ -1194,6 +1285,46 @@
   
 
   
+  <div class="prev-next">
+    
+    <a class='prev' href='/2021/06/19/MySQL%E7%9A%84%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%88%E9%99%84%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%89/'>
+      <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>MySQL的多表查询</p>
+      <p class='content'>
+一、需求分析
+二、数据库设计
+三、数据库查询展示
+
+
+
+一、需求分析1、背景针对疫情防控，设计数据库，存储师生的学号、姓名、来源地等基本信息，能够根据需要查询、修改来自风险地区的学生信息，从而...</p>
+    </a>
+    
+    
+    <a class='next' href='/2020/10/06/%E7%81%AB%E6%9F%B4%E4%BA%BA%E8%B7%91%E9%85%B7/'>
+      <p class='title'>火柴人跑酷<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+      <p class='content'>
+课题来源
+
+课题功能
+
+相关数据结构
+
+
+函数功能
+
+调试记录
+
+分工情况
+
+心得体会
+课题来源课题自拟，灵感来源于火柴人跑酷游戏，通过互联网寻找图片、声音资源，团队合作开发出此项目。
+
+
+课...</p>
+    </a>
+    
+  </div>
+  
 </article>
 
 
@@ -1213,9 +1344,6 @@
 
 
 </div>
-
-
-
                         </div>
                         
   

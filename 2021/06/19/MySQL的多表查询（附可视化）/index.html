@@ -16,9 +16,14 @@
 
   <!-- 页面元数据 -->
   
-  <title>tags - 肖林航的博客</title>
+  <title>MySQL的多表查询 - 肖林航的博客</title>
   
 
+  
+    <meta name="description" content="
+一、需求分析
+二、数据库设计
+三、数据库查询展示">
   
 
   <!-- feed -->
@@ -678,7 +683,7 @@
 
   
   
-      <div class='cover-wrapper page featured' style="display: none;">
+      <div class='cover-wrapper post featured' style="display: none;">
         <canvas id="header_canvas" style="position:absolute;bottom:0;z-index: 1;" width="900" height="350"></canvas>
         
           <div class='cover-backstretch'></div>
@@ -766,8 +771,8 @@
 
 
 <div id="pjax-data" style="display: none">
-  <div id="pjax-ispage">false</div>
-  <div id="pjax-pageTitle"></div>
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">MySQL的多表查询</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -1036,6 +1041,20 @@
 
 
 
+  <section class="widget toc-wrapper shadow floatable desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fal fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="toc-text">一、需求分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1"><span class="toc-text">二、数据库设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%B1%95%E7%A4%BA"><span class="toc-text">三、数据库查询展示</span></a></li></ol>
+    </div>
+  </section>
+
 
   
 
@@ -1044,18 +1063,24 @@
 
 <div class='l_main'>
   <article
-  class="article post white-box reveal md shadow floatable article-type-page"
-  id="page" itemscope itemprop="blogPost">
+  class="article post white-box reveal md shadow floatable article-type-post"
+  id="post" itemscope itemprop="blogPost">
   
 
 
+  
+    
+      
+        <div class='headimg lazyload' data-bg='/img/033.jpg'></div>
+      
+    
   
   <div class="article-meta" id="top">
     
     
     
       <h1 class="title">
-        tags
+        MySQL的多表查询
       </h1>
       <div class='new-meta-box'>
         
@@ -1079,7 +1104,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fal fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jun 18, 2021</p>
+    <p>发布于：Jun 19, 2021</p>
   </a>
 </div>
 
@@ -1090,7 +1115,7 @@
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="tags" data-path="/tags/">
+      <div id="lc-pv" data-title="MySQL的多表查询" data-path="/2021/06/19/MySQL%E7%9A%84%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%88%E9%99%84%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%89/">
         <i class="fal fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -1109,8 +1134,128 @@
   
 
   
+  <ul>
+<li><a href="#%E4%B8%80%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90">一、需求分析</a></li>
+<li><a href="#%E4%BA%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1">二、数据库设计</a></li>
+<li><a href="#%E4%B8%89%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%B1%95%E7%A4%BA">三、数据库查询展示</a><span id="more"></span>
+
+</li>
+</ul>
+<h2 id="一、需求分析"><a href="#一、需求分析" class="headerlink" title="一、需求分析"></a>一、需求分析</h2><p>1、背景<br>针对疫情防控，设计数据库，存储师生的学号、姓名、来源地等基本信息，能够根据需要查询、修改来自风险地区的学生信息，从而对不同群体实施不同的防疫策略，并设计课程信息管理、选课等相关教务功能。</p>
+<p>2、功能描述<br>①疫情防控特有功能：对返校师生的出发地、风险级别进行查询修改等操作，便于导出可能存在的有风险人群；②师生信息的更新换代：对学生、老师的个人信息的修改查询等常规操作，以及新的信息的插入和废弃数据的删除，且避免冗余；③课程信息管理：能够查询并修改特定学生的特定课程的成绩，查询选某个课程的学生群体或某个课程的所有学生信息；⑤班级信息管理：④其他常规教务系统常规操作。</p>
+<h2 id="二、数据库设计"><a href="#二、数据库设计" class="headerlink" title="二、数据库设计"></a>二、数据库设计</h2><p>1、关系模式</p>
+<p>①Student(Sid，Sname，sex，address， phone，class_id， risk_level)<br>    学生表：包含学号Sid（唯一）、姓名Sname、性别sex（只存在‘male’、‘female’两种情况）、来源地address、电话号码phone、班级编号class_id，风险级别risk_level（只存在‘low’、‘middle’、‘high’三种情况）</p>
+<p>②Class(class_id，department，major，year)<br>    班级表：包含班级编号class_id(唯一)、所属院系department、所属专业major、入学年份year</p>
+<p>③Teacher（Tid，Tname，sex，address，phone，department，risk_level）<br>    教师表：包含工号Tid（唯一）、姓名Tname、性别sex（只存在‘male’，‘female’两种情况）、来源地address、电话号码phone、学院department、风险级别risk_level（只存在‘low’、‘middle’、‘high’三种情况）</p>
+<p>④Course(Cid，Cname，Tid)<br>    课程表：包含课程编号Cid（唯一）、课程名称Cname、上课教师工号Tid并作为外键</p>
+<p>⑤Score（Sid，Cid，score）<br>    成绩表：包含学生学号Cid、课程编号Cid、分数score</p>
+<p>2、E/R图<br><img src="https://img-blog.csdnimg.cn/20210121192316851.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121192316851.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<h2 id="三、数据库查询展示"><a href="#三、数据库查询展示" class="headerlink" title="三、数据库查询展示"></a>三、数据库查询展示</h2><p>说明：安装MySQL，并使用了可视化工具Navicat for MySQL进行编程操作、展示，且已向表中插入数据（数据均为虚构）。</p>
+<p>1.查询所有风险等级为middle和high的师生的学号或工号、姓名、性别、来源地、电话号码、风险等级。<br>代码：</p>
+<pre><code>mysql&gt; select Sid,Sname,sex,address,phone,risk_level
+-&gt; from Student
+-&gt; where risk_level=&#39;middle&#39; or risk_level=&#39;high&#39;;
+
+mysql&gt; select Tid,Tname,sex,address,phone,risk_level
+-&gt; from Teacher
+-&gt; where risk_level=&#39;middle&#39; or risk_level=&#39;high&#39;;
+</code></pre>
+<p><img src="https://img-blog.csdnimg.cn/20210121193001294.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121193001294.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p>2.查询学习“数据库基础”课程的所有学生的学号、姓名、性别、班级、分数，并按照分数进行降序排序。</p>
+<p>代码：</p>
+<pre><code>mysql&gt; select Sid,Sname,sex,class_id,score
+-&gt; from Student natural join Score natural join Course
+-&gt; where Cname=&#39;数据库基础&#39;
+-&gt; order by score desc;
+</code></pre>
+<p> <img src="https://img-blog.csdnimg.cn/20210121193037292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121193037292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p>3.查询所有挂科学生的学号、姓名、性别、班级、专业、所挂科目、分数，并进行属性的改名。<br>代码：</p>
+<pre><code>mysql&gt; select Sid as &#39;学号&#39;,Sname as &#39;姓名&#39;,class_id as &#39;班级&#39;,major as &#39;专业&#39;,Cname as &#39;所挂科目&#39;,score as &#39;分数&#39;
+-&gt; from Student natural join Class natural join Score natural join Course
+-&gt; where score&lt;60;
+</code></pre>
+<p> <img src="https://img-blog.csdnimg.cn/20210121194912405.png" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121194912405.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p>4.查询所有参与授课教师的工号、姓名、院系、课程名称、课程平均分，按照教师姓名分组，并进行合理的属性改名。<br>代码：</p>
+<pre><code>mysql&gt; select Tid as &#39;工号&#39;,Tname as &#39;姓名&#39;,department as &#39;院系&#39;,Cname as &#39;课程名称&#39;,avg(score) as &#39;平均分&#39;
+-&gt; from Teacher natural join Course natural join Score
+-&gt; group by Tname;
+</code></pre>
+<p> <img src="https://img-blog.csdnimg.cn/20210121194950454.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121194950454.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<ol start="5">
+<li><p>查询所有参与授课教师的工号、姓名、院系、课程名称、课堂总人数、课程最高分，按照教师姓名分组，并进行合理的属性改名。<br>代码：</p>
+<p> mysql&gt; select Tid as ‘工号’,Tname as ‘姓名’,department as ‘院系’,Count(Sid) as ‘总人数’,max(score) as ‘最高分’<br> -&gt; from Teacher natural join Course natural join Score<br> -&gt; group by Tname;<br><img src="https://img-blog.csdnimg.cn/20210121195012911.png" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121195012911.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+</li>
+</ol>
+<p>6.查询计算机系未学过离散数学的学生学号、姓名、班级、专业。<br>代码：</p>
+<pre><code>mysql&gt; select Sid,Sname,class_id,major
+-&gt; from Score natural join Student natural join Class natural join Course
+-&gt; where department=&#39;计算机系&#39; and Sid not in
+-&gt; (select Sid
+-&gt; from Student natural join Class natural join Score natural join Course
+-&gt; where Cname=&#39;离散数学&#39;);
+</code></pre>
+<p> <img src="https://img-blog.csdnimg.cn/20210121195042484.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121195042484.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述">![</p>
+<p>7.查询所有学习课程数目大于等于2的学生学号、姓名、班级、专业、选课数，并进行合理的改名。<br>代码：</p>
+<pre><code>mysql&gt; select Sid as &#39;学号&#39;,Sname as &#39;姓名&#39;,class_id as &#39;班级&#39;,major as &#39;专业&#39;,count(Sid) as &#39;选课数&#39;
+-&gt; from Student natural join Score natural join Class
+-&gt; group by Sname
+-&gt; having count(Sid)&gt;=2;
+</code></pre>
+<p> <img src="https://img-blog.csdnimg.cn/20210121195253468.png" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121195253468.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p>8.查询各专业的学生人数，按照专业进行分组，并按照学生人数进行降序排序。<br>代码：</p>
+<pre><code>mysql&gt; select major as &#39;专业&#39;,count(Sid) as &#39;学生人数&#39;
+-&gt; from Student natural join Class
+-&gt; group by major
+-&gt; order by count(Sid) desc;
+</code></pre>
+<p> <img src="https://img-blog.csdnimg.cn/20210121195401917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121195401917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p>9.查询各学院的专业数量、学生总人数，按学院进行分组，并按照专业数量降序排序。<br>代码：</p>
+<pre><code>mysql&gt; select department as &#39;院系&#39;,count(distinct major) as &#39;专业数量&#39;,count(Sid) as &#39;学生总人数&#39;
+-&gt; from Class natural join Student
+-&gt; group by department
+-&gt; order by count(distinct major) desc;
+</code></pre>
+<p><img src="https://img-blog.csdnimg.cn/20210121195545444.png" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121195545444.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+
   
   
+  
+  <div class='footer'>
+    
+    
+    
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fal fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="\2020\09\01\hello-world\" title="Hello World" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">Hello World</span><span class="excerpt">
+Quick Start
+
+Create a new post
+
+Run server
+
+Generate static ...</span></a></div></section></div>
+    
+    
+    <div class='copyright'>
+      <blockquote>
+        
+        
+        <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+        
+        
+        
+        <p>本文永久链接是：<a href=https://nuyoah-xlh.github.io/2021/06/19/MySQL%E7%9A%84%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%88%E9%99%84%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%89/>https://nuyoah-xlh.github.io/2021/06/19/MySQL%E7%9A%84%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%88%E9%99%84%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%89/</a></p>
+        
+        
+      </blockquote>
+    </div>
+    
+    
+  </div>
   
   
   
@@ -1120,10 +1265,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-18T23:45:35+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-19T15:02:00+08:00">
   <a class='notlink'>
     <i class="fal fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jun 18, 2021</p>
+    <p>更新于：Jun 19, 2021</p>
   </a>
 </div>
 
@@ -1142,7 +1287,10 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/tags/index.html&title=tags - 肖林航的博客&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/2021/06/19/MySQL%E7%9A%84%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%88%E9%99%84%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%89/&title=MySQL的多表查询 - 肖林航的博客&summary=
+一、需求分析
+二、数据库设计
+三、数据库查询展示"
           
           >
           
@@ -1154,7 +1302,10 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/tags/index.html&title=tags - 肖林航的博客&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/2021/06/19/MySQL%E7%9A%84%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%88%E9%99%84%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%89/&title=MySQL的多表查询 - 肖林航的博客&summary=
+一、需求分析
+二、数据库设计
+三、数据库查询展示"
           
           >
           
@@ -1166,7 +1317,10 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/tags/index.html&title=tags - 肖林航的博客&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/2021/06/19/MySQL%E7%9A%84%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%88%E9%99%84%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%89/&title=MySQL的多表查询 - 肖林航的博客&summary=
+一、需求分析
+二、数据库设计
+三、数据库查询展示"
           
           >
           
@@ -1194,6 +1348,24 @@
   
 
   
+  <div class="prev-next">
+    
+    
+    <a class='next' href='/2020/10/11/Qt%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85/'>
+      <p class='title'>Qt程序简单打包<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+      <p class='content'>
+1、执行released
+2、找到生成目录
+3、复制到新的文件夹里并操作
+1、执行released
+
+
+2、找到生成目录
+进入这个文件夹，再进入它的子文件夹 release 里面，找到 Tes...</p>
+    </a>
+    
+  </div>
+  
 </article>
 
 
@@ -1213,9 +1385,6 @@
 
 
 </div>
-
-
-
                         </div>
                         
   

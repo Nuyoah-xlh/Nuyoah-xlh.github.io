@@ -16,9 +16,17 @@
 
   <!-- 页面元数据 -->
   
-  <title>tags - 肖林航的博客</title>
+  <title>Qt实现六子棋游戏 - 肖林航的博客</title>
+  
+    <meta name="keywords" content="-Qt-C++">
   
 
+  
+    <meta name="description" content="
+游戏规则
+已实现的功能
+开发平台
+">
   
 
   <!-- feed -->
@@ -678,7 +686,7 @@
 
   
   
-      <div class='cover-wrapper page featured' style="display: none;">
+      <div class='cover-wrapper post featured' style="display: none;">
         <canvas id="header_canvas" style="position:absolute;bottom:0;z-index: 1;" width="900" height="350"></canvas>
         
           <div class='cover-backstretch'></div>
@@ -766,8 +774,8 @@
 
 
 <div id="pjax-data" style="display: none">
-  <div id="pjax-ispage">false</div>
-  <div id="pjax-pageTitle"></div>
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">Qt实现六子棋游戏</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -1036,6 +1044,20 @@
 
 
 
+  <section class="widget toc-wrapper shadow floatable desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fal fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E8%A7%84%E5%88%99"><span class="toc-text">游戏规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%B2%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%8A%9F%E8%83%BD"><span class="toc-text">已实现的功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0"><span class="toc-text">开发平台</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80"><span class="toc-text">项目地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E8%BF%90%E8%A1%8C%E7%8A%B6%E5%86%B5"><span class="toc-text">项目运行状况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E5%87%BD%E6%95%B0%E6%8F%8F%E8%BF%B0"><span class="toc-text">主要函数描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E4%BD%93%E6%80%9D%E8%B7%AF"><span class="toc-text">总体思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E5%88%86%E5%87%BD%E6%95%B0void-Game-getScore-%E6%9D%83%E5%80%BC%E8%AE%BE%E5%AE%9A"><span class="toc-text">计分函数void Game::getScore()权值设定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E4%BD%93%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-text">总体设计思路流程图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E5%87%BD%E6%95%B0%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-text">主要函数流程图</span></a></li></ol>
+    </div>
+  </section>
+
 
   
 
@@ -1044,18 +1066,24 @@
 
 <div class='l_main'>
   <article
-  class="article post white-box reveal md shadow floatable article-type-page"
-  id="page" itemscope itemprop="blogPost">
+  class="article post white-box reveal md shadow floatable article-type-post"
+  id="post" itemscope itemprop="blogPost">
   
 
 
+  
+    
+      
+        <div class='headimg lazyload' data-bg='/img/039.jpg'></div>
+      
+    
   
   <div class="article-meta" id="top">
     
     
     
       <h1 class="title">
-        tags
+        Qt实现六子棋游戏
       </h1>
       <div class='new-meta-box'>
         
@@ -1079,7 +1107,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fal fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jun 18, 2021</p>
+    <p>发布于：Oct 1, 2020</p>
   </a>
 </div>
 
@@ -1090,7 +1118,7 @@
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="tags" data-path="/tags/">
+      <div id="lc-pv" data-title="Qt实现六子棋游戏" data-path="/2020/10/01/Qt%E5%AE%9E%E7%8E%B0%E5%85%AD%E5%AD%90%E6%A3%8B%E6%B8%B8%E6%88%8F/">
         <i class="fal fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -1109,8 +1137,182 @@
   
 
   
+  <ul>
+<li><a href="#%E6%B8%B8%E6%88%8F%E8%A7%84%E5%88%99">游戏规则</a></li>
+<li><a href="#%E5%B7%B2%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%8A%9F%E8%83%BD">已实现的功能</a></li>
+<li><a href="#%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</a></li>
+<li><span id="more"></span></li>
+<li><a href="#%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80">项目地址</a></li>
+<li><a href="#%E9%A1%B9%E7%9B%AE%E8%BF%90%E8%A1%8C%E7%8A%B6%E5%86%B5">项目运行状况</a></li>
+<li><a href="#%E4%B8%BB%E8%A6%81%E5%87%BD%E6%95%B0%E6%8F%8F%E8%BF%B0">主要函数描述</a></li>
+<li><a href="#%E6%80%BB%E4%BD%93%E6%80%9D%E8%B7%AF">总体思路</a></li>
+<li><a href="#%E8%AE%A1%E5%88%86%E5%87%BD%E6%95%B0void-gamegetscore%E6%9D%83%E5%80%BC%E8%AE%BE%E5%AE%9A">计分函数void Game::getScore()权值设定</a></li>
+<li><a href="#%E6%80%BB%E4%BD%93%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF%E6%B5%81%E7%A8%8B%E5%9B%BE">总体设计思路流程图</a></li>
+<li><a href="#%E4%B8%BB%E8%A6%81%E5%87%BD%E6%95%B0%E6%B5%81%E7%A8%8B%E5%9B%BE">主要函数流程图</a></li>
+</ul>
+<h2 id="游戏规则"><a href="#游戏规则" class="headerlink" title="游戏规则"></a>游戏规则</h2><p><strong>1.</strong> 默认先手者为黑棋方，对峙双方谁的六个棋子先连在一条线即为胜者。<br><strong>2.</strong> 当有四个子连成一条直线时，就应采取防守，堵住四子的一端，否则就会输掉比赛。<br><strong>3.</strong> 应当避免在比赛内出现四四禁手、五五禁手等情况，否则就会不小心输掉比赛。</p>
+<h2 id="已实现的功能"><a href="#已实现的功能" class="headerlink" title="已实现的功能"></a>已实现的功能</h2><p><strong>1.</strong> Qt编程实现server程序六子棋游戏界面，20*20格子；</p>
+<p><strong>2.</strong> 编程实现server本地端的鼠标点击依次放置黑白棋子，实现双人手动下棋；</p>
+<p><strong>3.</strong> 编程实现自动判别下棋的合法性；</p>
+<p><strong>4.</strong> 编程实现自动判别盘面输赢或者和棋；</p>
+<p><strong>5.</strong> 编程实现实现本地人机下棋；</p>
+<p><strong>6.</strong> 编程实现本地机机下棋；</p>
+<p><strong>7.</strong> 开始游戏有背景音乐；点击按钮或落下棋子时，有声效；加入按钮点击特效。</p>
+<p><strong>8.</strong> 设计选项，可选择开启/关闭禁手。</p>
+<h2 id="开发平台"><a href="#开发平台" class="headerlink" title="开发平台"></a>开发平台</h2><p><strong>所使用的开发环境：Windows10 + Qt 5.9.2 + C++语言环境</strong></p>
+<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p>作者Github主页：<a target="_blank" rel="noopener" href="https://github.com/13243129626">https://github.com/13243129626</a></p>
+<p>项目仓库：<a target="_blank" rel="noopener" href="https://github.com/13243129626/QT-Connec6">https://github.com/13243129626/QT-Connec6</a></p>
+<h2 id="项目运行状况"><a href="#项目运行状况" class="headerlink" title="项目运行状况"></a>项目运行状况</h2><p><img src="https://img-blog.csdnimg.cn/20201019172422525.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20201019172422525.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="游戏初始界面"></p>
+<p><img src="https://img-blog.csdnimg.cn/20201019172449478.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20201019172449478.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="棋盘界面"></p>
+<p><img src="https://img-blog.csdnimg.cn/20201019172625679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20201019172625679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="人机对战界面"></p>
+<p><img src="https://img-blog.csdnimg.cn/20201019172724844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20201019172724844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="禁手导致游戏结束"></p>
+<h2 id="主要函数描述"><a href="#主要函数描述" class="headerlink" title="主要函数描述"></a>主要函数描述</h2><table>
+<thead>
+<tr>
+<th>函数名称</th>
+<th>函数功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>void MainWindow::paintEvent(QPaintEvent *);</td>
+<td>绘图函数：绘制棋盘、根据实时情况绘制黑棋子和白棋子、添加棋盘背景图片、实现部分按钮特效</td>
+</tr>
+<tr>
+<td>void MainWindow::mouseReleaseEvent(QMouseEvent *event);</td>
+<td>鼠标点击函数：如果是双人模式，则每次点击棋盘时，该函数调用playByPerson()进行人下棋；如果是人机模式，每次点击时，该函数被调用，根据情况调用playByPerson()人下棋playByAI()进行AI下棋；同时更新界面</td>
+</tr>
+<tr>
+<td>void MainWindow::mouseMoveEvent(QMouseEvent *event);</td>
+<td>鼠标移动函数：鼠标移动到按钮处时，显示按钮；获取鼠标的当前坐标值，并计算距离最近的可落子的点；并更新界面;</td>
+</tr>
+<tr>
+<td>void MainWindow::isEnd();</td>
+<td>判断游戏是否结束函数：分别调用函数bool Game::isWin(int clickX,int clickY)、bool Game::isHeQi()、bool Game::isJinShou(int x,int y)判断是否六子连珠、是否和棋、是否禁手，从而判断游戏是否结束，并做相应处理;</td>
+</tr>
+<tr>
+<td>bool Game::isWin(int clickX,int clickY);</td>
+<td>判断输赢函数：判断是否因发生任意一方六子连珠导致游戏结束;</td>
+</tr>
+<tr>
+<td>bool Game::isHeQi();</td>
+<td>判断和棋函数：判断是否棋子占满棋盘仍未结束游戏，即为和棋;</td>
+</tr>
+<tr>
+<td>bool Game::isJinShou(int x,int y);</td>
+<td>判断禁手函数：判断先手一方的落子点是否是禁手点；若是，则结束游戏，先手方败;</td>
+</tr>
+<tr>
+<td>void Game::getScore();</td>
+<td>计分函数：分别对黑棋子方、白棋子方的落子情况进行计分，最后取最大计分值，并存入计分数组score</td>
+</tr>
+</tbody></table>
+<h2 id="总体思路"><a href="#总体思路" class="headerlink" title="总体思路"></a>总体思路</h2><p><strong>1.</strong> 设计绘图函数paintEvent(QPaintEvent * )，绘制出20 * 20棋盘，并添加背景图片，使用UI界面添加三个按钮，分别作为人人对战、人机对战、机机对战的开始按钮；</p>
+<p><strong>2.</strong> 设计鼠标移动处理函数:mouseMoveEvent(QMouseEvent * event)，记录下鼠标位置；设计鼠标点击处理函数mouseReleaseEvent(QMouseEvent * event)，根据情况将该点击位置存储到预先设定的棋盘二维数组board中，再通过步骤 1 的绘图函数绘制出相应棋盘布局情况；</p>
+<p><strong>3.</strong> 设计判断游戏是否结束的函数isEnd()，该函数通过调用isWin()、isHeQi()、isJinShou()三个函数分别判断是否六子连珠、是否和棋、是否黑子方禁手，从而判断游戏是否结束，并做出相应处理；至此，双人模式即算完成；</p>
+<p><strong>4.</strong> 设计人机模式，首先构造AI思考函数，通过getScore()函数获得AI的最大分值位置，计入棋盘积分数组，考虑每次人点击棋盘下棋后，AI经过一定延迟时间，在最大计分位置落子；即可构思人机模式；</p>
+<p><strong>5.</strong> 考虑机机模式，通过设计定时器，启动游戏后，定时器启动，每隔一定间隔时间，AI双方轮流调用AI思考函数，找到各自的权值最大的位置落子，从而实现AI对决的模式。</p>
+<p><strong>6.</strong> 每次人或AI落下棋子时，调用QSound::play()函数发出特效；初始默认按钮透明，当鼠标在按钮上方时，按钮恢复不透明。</p>
+<h2 id="计分函数void-Game-getScore-权值设定"><a href="#计分函数void-Game-getScore-权值设定" class="headerlink" title="计分函数void Game::getScore()权值设定"></a>计分函数void Game::getScore()权值设定</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>分值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>活五</td>
+<td>+=60 0000</td>
+</tr>
+<tr>
+<td>死五</td>
+<td>+=50 0000</td>
+</tr>
+<tr>
+<td>活四</td>
+<td>+=40 0000</td>
+</tr>
+<tr>
+<td>死四</td>
+<td>+=25 0000</td>
+</tr>
+<tr>
+<td>活三</td>
+<td>+=30 0000</td>
+</tr>
+<tr>
+<td>死三</td>
+<td>+=15 0000</td>
+</tr>
+<tr>
+<td>活二</td>
+<td>+=20 0000</td>
+</tr>
+<tr>
+<td>死二</td>
+<td>+=10 0000</td>
+</tr>
+<tr>
+<td>单棋</td>
+<td>+=2000</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>+=1000</td>
+</tr>
+</tbody></table>
+<p><strong>优先级顺序：活五&gt;&gt;死五&gt;&gt;活四&gt;&gt;活三&gt;&gt;死四&gt;&gt;活二&gt;&gt;死三&gt;&gt;死二&gt;&gt;其他</strong></p>
+<p>活五：指已有五子连成一条线，且两端有两个位置可以落子；<br>死五：指已有五子连成一条线，且两端只有一个位置可以落子。<br>其他情况类推。</p>
+<p>该函数为AI思考的主要函数，判断落子点时，该函数需要计算我方和对方的棋盘权值最大值，再找到两者最大权值的位置，作为落子点。</p>
+<h2 id="总体设计思路流程图"><a href="#总体设计思路流程图" class="headerlink" title="总体设计思路流程图"></a>总体设计思路流程图</h2><p><img src="https://img-blog.csdnimg.cn/20201019172044699.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20201019172044699.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="总体设计思路流程图"></p>
+<h2 id="主要函数流程图"><a href="#主要函数流程图" class="headerlink" title="主要函数流程图"></a>主要函数流程图</h2><p><strong>一、人和AI落子函数</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/20200928223811274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20200928223811274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="playByPerson()和playByAI()"></p>
+<p><strong>二、 判断游戏是否结束函数</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/20200928223828903.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20200928223828903.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="isEnd()函数"></p>
+<p><strong>三、 机机对战函数</strong> </p>
+<p><img src="https://img-blog.csdnimg.cn/20200928223839701.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20200928223839701.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="start_EVE()函数"></p>
+<hr>
+<hr>
+<hr>
+
   
   
+  
+  <div class='footer'>
+    
+    
+    
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fal fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="\2020\09\01\hello-world\" title="Hello World" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">Hello World</span><span class="excerpt">
+Quick Start
+
+Create a new post
+
+Run server
+
+Generate static ...</span></a></div></section></div>
+    
+    
+    <div class='copyright'>
+      <blockquote>
+        
+        
+        <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+        
+        
+        
+        <p>本文永久链接是：<a href=https://nuyoah-xlh.github.io/2020/10/01/Qt%E5%AE%9E%E7%8E%B0%E5%85%AD%E5%AD%90%E6%A3%8B%E6%B8%B8%E6%88%8F/>https://nuyoah-xlh.github.io/2020/10/01/Qt%E5%AE%9E%E7%8E%B0%E5%85%AD%E5%AD%90%E6%A3%8B%E6%B8%B8%E6%88%8F/</a></p>
+        
+        
+      </blockquote>
+    </div>
+    
+    
+  </div>
   
   
   
@@ -1120,10 +1322,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-18T23:45:35+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-19T15:16:20+08:00">
   <a class='notlink'>
     <i class="fal fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jun 18, 2021</p>
+    <p>更新于：Jun 19, 2021</p>
   </a>
 </div>
 
@@ -1131,6 +1333,9 @@
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Qt-C/" rel="nofollow"><i class="fal fa-hashtag fa-fw" aria-hidden="true"></i><p>-Qt-C++</p></a></div>
+
 
         
       
@@ -1142,7 +1347,11 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/tags/index.html&title=tags - 肖林航的博客&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/2020/10/01/Qt%E5%AE%9E%E7%8E%B0%E5%85%AD%E5%AD%90%E6%A3%8B%E6%B8%B8%E6%88%8F/&title=Qt实现六子棋游戏 - 肖林航的博客&summary=
+游戏规则
+已实现的功能
+开发平台
+"
           
           >
           
@@ -1154,7 +1363,11 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/tags/index.html&title=tags - 肖林航的博客&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/2020/10/01/Qt%E5%AE%9E%E7%8E%B0%E5%85%AD%E5%AD%90%E6%A3%8B%E6%B8%B8%E6%88%8F/&title=Qt实现六子棋游戏 - 肖林航的博客&summary=
+游戏规则
+已实现的功能
+开发平台
+"
           
           >
           
@@ -1166,7 +1379,11 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/tags/index.html&title=tags - 肖林航的博客&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/2020/10/01/Qt%E5%AE%9E%E7%8E%B0%E5%85%AD%E5%AD%90%E6%A3%8B%E6%B8%B8%E6%88%8F/&title=Qt实现六子棋游戏 - 肖林航的博客&summary=
+游戏规则
+已实现的功能
+开发平台
+"
           
           >
           
@@ -1194,6 +1411,64 @@
   
 
   
+  <div class="prev-next">
+    
+    <a class='prev' href='/2020/10/06/%E7%81%AB%E6%9F%B4%E4%BA%BA%E8%B7%91%E9%85%B7/'>
+      <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>火柴人跑酷</p>
+      <p class='content'>
+课题来源
+
+课题功能
+
+相关数据结构
+
+
+函数功能
+
+调试记录
+
+分工情况
+
+心得体会
+课题来源课题自拟，灵感来源于火柴人跑酷游戏，通过互联网寻找图片、声音资源，团队合作开发出此项目。
+
+
+课...</p>
+    </a>
+    
+    
+    <a class='next' href='/2020/09/26/Git%E5%AD%A6%E4%B9%A0/'>
+      <p class='title'>Git学习<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+      <p class='content'>
+创建版本库
+
+时光机穿梭
+
+
+
+版本回退
+工作区和暂存区
+管理修改
+撤销修改
+删除文件
+
+
+远程仓库
+
+添加远程库
+从远程库克隆
+
+
+分支管理
+
+创建与合并分支
+解决冲突
+分支管理策略
+Bug...</p>
+    </a>
+    
+  </div>
+  
 </article>
 
 
@@ -1213,9 +1488,6 @@
 
 
 </div>
-
-
-
                         </div>
                         
   

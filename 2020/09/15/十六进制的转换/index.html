@@ -16,14 +16,17 @@
 
   <!-- 页面元数据 -->
   
-  <title>Hello World - Hexo</title>
+  <title>十六进制的相关转换 - 肖林航的博客</title>
   
 
+  
+    <meta name="description" content="
+进制转换">
   
 
   <!-- feed -->
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="肖林航的博客" type="application/atom+xml">
   
 
   <!-- import meta -->
@@ -36,6 +39,10 @@
 
   
   
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css">
+
+  
   
     
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
@@ -43,9 +50,15 @@
   
 
   
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
 
   
 
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
   
 
   
@@ -58,12 +71,6 @@
   <!-- import link -->
   
 
-  
-    
-      
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.2.0/styles/a11y-dark.css">
-
-    
   
   
     
@@ -86,8 +93,15 @@
     
 </head>
 
-<body>
-  <header class="l_header auto shadow floatable blur" style='opacity: 0' >
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/sakura.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/mouse_slide.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/clicklove.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/mouse_click.js"></script>
+
+
+        <header class="l_header auto shadow floatable blur" style='opacity: 0' >
   <div class='container'>
   <div class='wrapper'>
     <div class='nav-sub'>
@@ -104,7 +118,7 @@
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://picup.heson10.com/img/upyun/hesonlogoyasuo.gif'/>
+            <img no-lazy class='logo' src='/img/logo.png'/>
           
           
           
@@ -662,20 +676,20 @@
   </div>
 </header>
 
-  <div class="l_body">
-    <div class="l_cover">
+            <div class="l_body">
+                <div class="l_cover">
 
   
   
       <div class='cover-wrapper post featured' style="display: none;">
         <canvas id="header_canvas" style="position:absolute;bottom:0;z-index: 1;" width="900" height="350"></canvas>
         
-          <div class='cover-bg lazyload placeholder' data-bg="https://picup.heson10.com/img/upyun/home_top_bg.webp"></div>
+          <div class='cover-backstretch'></div>
         
         <div class='cover-body'>
   <div class='top'>
     
-      <img no-lazy class='logo' src='https://picup.heson10.com/img/upyun/heson10logo5.png'/>
+      <img no-lazy class='logo' src='/img/logo.png'/>
     
     
     
@@ -746,17 +760,17 @@
 
 </div>
 
-    <div class='safearea'>
-      <div class='body-wrapper' id="pjax-container">
-        
-          <!--此文件用来存放一些不方便取值的变量-->
+                    <div class='safearea'>
+                        <div class='body-wrapper' id="pjax-container">
+                            
+                                <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 
 
 <div id="pjax-data" style="display: none">
   <div id="pjax-ispage">true</div>
-  <div id="pjax-pageTitle">Hello World</div>
+  <div id="pjax-pageTitle">十六进制的相关转换</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -782,22 +796,22 @@
 </script>
 
 
-        
-        
+                                    
+                                        
 
 <aside class='l_side'>
   <div style="margin-bottom: 16px;border-radius: 8px;" class='shadow floatable widget_author desktop'>
     <div id="zuozhebg" class="newauthor"
-      style="background: url(https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png) center center no-repeat;background-size:cover">
+      style="background: url(/img/head.jpg) center center no-repeat;background-size:cover">
     </div>
     <div class="relive_widget_v3">
       <div class="box-author-info">
         <div class="author-face">
-          <a href="/about" target="_blank" rel="nofollow" title="关于John Doe">
-            <img no-lazy alt="" src="https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png"
+          <a href="/about" target="_blank" rel="nofollow" title="关于肖林航">
+            <img no-lazy alt="" src="/img/head.jpg"
               class="avatar avatar-200 photo" height="200" width="200"> </a>
         </div>
-        <div class="author-name">John Doe</div>
+        <div class="author-name">肖林航</div>
         <div id="author-one" class="author-one">
           <script>
             var binft = function (r) {
@@ -848,7 +862,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
 
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -860,7 +874,7 @@
             </div>
             <div class="site-state-item site-state-tags">
               <a href="/tags/">
-                <span class="site-state-item-count">0</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -923,7 +937,7 @@
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>2 篇</div>
+          <div>7 篇</div>
         </div>
       
 
@@ -933,7 +947,7 @@
           <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
         </div>
         <script>
-          var BirthDay = new Date(new Date('2020/07/06'));
+          var BirthDay = new Date(new Date('2021/06/18'));
           var today = new Date();
           var timeold = (today.getTime() - BirthDay.getTime());
           var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
@@ -945,29 +959,19 @@
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>75 字</div>
+          <div>9.1k 字</div>
         </div>
       
 
       
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          <div><span id="busuanzi_value_site_uv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 人</div>
-        </div>
-      
 
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          <div><span id="busuanzi_value_site_pv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 次</div>
-        </div>
       
 
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sat Jun 19 2021 10:39:59 GMT+0800 (新加坡标准时间)</div>
+            <div id="last-update" style="display: none;">Sat Jun 19 2021 15:38:09 GMT+0800 (新加坡标准时间)</div>
             <div id="last-update-show">2021-06-19 日</div>
           
         </div>
@@ -1035,20 +1039,6 @@
 
 
 
-  <section class="widget toc-wrapper shadow floatable desktop mobile" id="toc-div" >
-    
-  <header>
-    
-      <i class="fal fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
-    
-  </header>
-
-
-    <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
-    </div>
-  </section>
-
 
   
 
@@ -1063,12 +1053,18 @@
 
 
   
+    
+      
+        <div class='headimg lazyload' data-bg='/img/056.jpg'></div>
+      
+    
+  
   <div class="article-meta" id="top">
     
     
     
       <h1 class="title">
-        Hello World
+        十六进制的相关转换
       </h1>
       <div class='new-meta-box'>
         
@@ -1076,8 +1072,8 @@
             
 <div class='new-meta-item author'>
   <a class='author' href="/" rel="nofollow">
-    <img no-lazy src="https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png">
-    <p>Heson</p>
+    <img no-lazy src="/img/head.jpg">
+    <p>肖林航</p>
   </a>
 </div>
 
@@ -1092,7 +1088,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fal fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jun 18, 2021</p>
+    <p>发布于：Sep 15, 2020</p>
   </a>
 </div>
 
@@ -1103,7 +1099,7 @@
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="Hello World" data-path="/2021/06/18/hello-world/">
+      <div id="lc-pv" data-title="十六进制的相关转换" data-path="/2020/09/15/%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/">
         <i class="fal fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -1122,19 +1118,25 @@
   
 
   
-  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+  <ul>
+<li><a href="#%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2">进制转换</a><span id="more"></span></li>
+</ul>
+<p><strong>蓝桥杯基础练习-进制转换（十六进制转八进制+十六进制转十进制+十进制转十六进制）</strong></p>
+<p><strong>一、十六进制转八进制</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">试题 基础练习 十六进制转八进制 </span><br><span class="line">资源限制</span><br><span class="line">时间限制：<span class="number">1.0</span>s   内存限制：<span class="number">512.0</span>MB</span><br><span class="line">问题描述</span><br><span class="line">　　给定n个十六进制正整数，输出它们对应的八进制数。</span><br><span class="line"></span><br><span class="line">输入格式</span><br><span class="line">　　输入的第一行为一个正整数n （<span class="number">1</span>&lt;=n&lt;=<span class="number">10</span>）。</span><br><span class="line">　　接下来n行，每行一个由<span class="number">0</span>~<span class="number">9</span>、大写字母A~F组成的字符串，表示要转换的十六进制正整数，每个十六进制数长度不超过<span class="number">100000</span>。</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">　　输出n行，每行为输入对应的八进制正整数。</span><br><span class="line"></span><br><span class="line">　　【注意】</span><br><span class="line">　　输入的十六进制数不会有前导<span class="number">0</span>，比如<span class="number">012</span>A。</span><br><span class="line">　　输出的八进制数也不能有前导<span class="number">0</span>。</span><br><span class="line"></span><br><span class="line">样例输入</span><br><span class="line">　　<span class="number">2</span></span><br><span class="line">　　<span class="number">39</span></span><br><span class="line">　　<span class="number">123</span>ABC</span><br><span class="line"></span><br><span class="line">样例输出</span><br><span class="line">　　<span class="number">71</span></span><br><span class="line">　　<span class="number">4435274</span></span><br><span class="line"></span><br><span class="line">　　【提示】</span><br><span class="line">　　先将十六进制数转换成某进制数，再由某进制数转换成八进制。</span><br></pre></td></tr></table></figure>
+<p><strong>AC代码：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line">string a[<span class="number">16</span>]=&#123;<span class="string">&quot;0000&quot;</span>,<span class="string">&quot;0001&quot;</span>,<span class="string">&quot;0010&quot;</span>,<span class="string">&quot;0011&quot;</span>,<span class="string">&quot;0100&quot;</span>,<span class="string">&quot;0101&quot;</span>,<span class="string">&quot;0110&quot;</span>,<span class="string">&quot;0111&quot;</span>,<span class="string">&quot;1000&quot;</span>,<span class="string">&quot;1001&quot;</span>,<span class="string">&quot;1010&quot;</span>,<span class="string">&quot;1011&quot;</span>,<span class="string">&quot;1100&quot;</span>,<span class="string">&quot;1101&quot;</span>,<span class="string">&quot;1110&quot;</span>,<span class="string">&quot;1111&quot;</span>&#125;;</span><br><span class="line"><span class="function">string <span class="title">tran</span><span class="params">(<span class="keyword">char</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    string cnt=<span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="built_in"><span class="keyword">switch</span></span> (x)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;0&#x27;</span>:cnt+=a[<span class="number">0</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;1&#x27;</span>:cnt+=a[<span class="number">1</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;2&#x27;</span>:cnt+=a[<span class="number">2</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;3&#x27;</span>:cnt+=a[<span class="number">3</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;4&#x27;</span>:cnt+=a[<span class="number">4</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;5&#x27;</span>:cnt+=a[<span class="number">5</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;6&#x27;</span>:cnt+=a[<span class="number">6</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;7&#x27;</span>:cnt+=a[<span class="number">7</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;8&#x27;</span>:cnt+=a[<span class="number">8</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;9&#x27;</span>:cnt+=a[<span class="number">9</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;A&#x27;</span>:cnt+=a[<span class="number">10</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;B&#x27;</span>:cnt+=a[<span class="number">11</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;C&#x27;</span>:cnt+=a[<span class="number">12</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;D&#x27;</span>:cnt+=a[<span class="number">13</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;E&#x27;</span>:cnt+=a[<span class="number">14</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;F&#x27;</span>:cnt+=a[<span class="number">15</span>];<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">default</span>:<span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> cnt;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    string str[<span class="number">11</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;str[i];</span><br><span class="line">        string ans=<span class="string">&quot;&quot;</span>; <span class="comment">//存放二进制字符串</span></span><br><span class="line">        <span class="keyword">int</span> len=str[i].<span class="built_in">length</span>();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;len;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            ans+=<span class="built_in">tran</span>(str[i][j]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> len2=ans.<span class="built_in">length</span>();</span><br><span class="line">        <span class="keyword">if</span>(len2%<span class="number">3</span>==<span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            ans=<span class="string">&quot;00&quot;</span>+ans;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(len2%<span class="number">3</span>==<span class="number">2</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            ans=<span class="string">&quot;0&quot;</span>+ans;</span><br><span class="line">        &#125;</span><br><span class="line">        len2=ans.<span class="built_in">length</span>();</span><br><span class="line">        string cnt=<span class="string">&quot;&quot;</span>; <span class="comment">//存放八进制字符串</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;len2;j+=<span class="number">3</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> k=(ans[j]-<span class="string">&#x27;0&#x27;</span>)*<span class="built_in">pow</span>(<span class="number">2</span>,<span class="number">2</span>)+(ans[j+<span class="number">1</span>]-<span class="string">&#x27;0&#x27;</span>)*<span class="built_in">pow</span>(<span class="number">2</span>,<span class="number">1</span>)+(ans[j+<span class="number">2</span>]-<span class="string">&#x27;0&#x27;</span>)*<span class="built_in">pow</span>(<span class="number">2</span>,<span class="number">0</span>);</span><br><span class="line">            cnt+=(k+<span class="string">&#x27;0&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        cnt.<span class="built_in">erase</span>(<span class="number">0</span>,cnt.<span class="built_in">find_first_not_of</span>(<span class="string">&#x27;0&#x27;</span>));</span><br><span class="line">        cout&lt;&lt;cnt&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line"> <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"> <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p><strong>二、十六进制转十进制</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">试题 基础练习 十六进制转十进制  </span><br><span class="line">资源限制</span><br><span class="line">时间限制：<span class="number">1.0</span>s   内存限制：<span class="number">512.0</span>MB</span><br><span class="line">问题描述</span><br><span class="line">　　从键盘输入一个不超过<span class="number">8</span>位的正的十六进制数字符串，将它转换为正的十进制数后输出。</span><br><span class="line">　　注：十六进制数中的<span class="number">10</span>~<span class="number">15</span>分别用大写的英文字母A、B、C、D、E、F表示。</span><br><span class="line">样例输入</span><br><span class="line">FFFF</span><br><span class="line">样例输出</span><br><span class="line"><span class="number">65535</span></span><br></pre></td></tr></table></figure>
+<p><strong>AC代码：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">tran</span><span class="params">(<span class="keyword">char</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in"><span class="keyword">switch</span></span>(x)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;0&#x27;</span>:ans=<span class="number">0</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;1&#x27;</span>:ans=<span class="number">1</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;2&#x27;</span>:ans=<span class="number">2</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;3&#x27;</span>:ans=<span class="number">3</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;4&#x27;</span>:ans=<span class="number">4</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;5&#x27;</span>:ans=<span class="number">5</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;6&#x27;</span>:ans=<span class="number">6</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;7&#x27;</span>:ans=<span class="number">7</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;8&#x27;</span>:ans=<span class="number">8</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;9&#x27;</span>:ans=<span class="number">9</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;A&#x27;</span>:ans=<span class="number">10</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;B&#x27;</span>:ans=<span class="number">11</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;C&#x27;</span>:ans=<span class="number">12</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;D&#x27;</span>:ans=<span class="number">13</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;E&#x27;</span>:ans=<span class="number">14</span>;<span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;F&#x27;</span>:ans=<span class="number">15</span>;<span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    string str;</span><br><span class="line">    <span class="keyword">int</span> a[<span class="number">100</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">    cin&gt;&gt;str;</span><br><span class="line">    <span class="keyword">int</span> len=str.<span class="built_in">length</span>();</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=len<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">    &#123;</span><br><span class="line">        sum+=<span class="built_in">tran</span>(str[i])*<span class="built_in">pow</span>(<span class="number">16</span>,len-i<span class="number">-1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;sum&lt;&lt;endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><strong>三、十进制转十六进制</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">试题 基础练习 十进制转十六进制</span><br><span class="line">资源限制</span><br><span class="line">时间限制：<span class="number">1.0</span>s   内存限制：<span class="number">512.0</span>MB</span><br><span class="line">问题描述</span><br><span class="line">　　十六进制数是在程序设计时经常要使用到的一种整数的表示方式。它有<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,A,B,C,D,E,F共<span class="number">16</span>个符号，分别表示十进制数的<span class="number">0</span>至<span class="number">15</span>。十六进制的计数方法是满<span class="number">16</span>进<span class="number">1</span>，所以十进制数<span class="number">16</span>在十六进制中是<span class="number">10</span>，而十进制的<span class="number">17</span>在十六进制中是<span class="number">11</span>，以此类推，十进制的<span class="number">30</span>在十六进制中是<span class="number">1</span>E。</span><br><span class="line">　　给出一个非负整数，将它表示成十六进制的形式。</span><br><span class="line">输入格式</span><br><span class="line">　　输入包含一个非负整数a，表示要转换的数。<span class="number">0</span>&lt;=a&lt;=<span class="number">2147483647</span></span><br><span class="line">输出格式</span><br><span class="line">　　输出这个整数的<span class="number">16</span>进制表示</span><br><span class="line">样例输入</span><br><span class="line"><span class="number">30</span></span><br><span class="line">样例输出</span><br><span class="line"><span class="number">1</span>E</span><br></pre></td></tr></table></figure>
+<p><strong>AC代码：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">char</span> a[<span class="number">16</span>]=&#123;<span class="string">&#x27;0&#x27;</span>,<span class="string">&#x27;1&#x27;</span>,<span class="string">&#x27;2&#x27;</span>,<span class="string">&#x27;3&#x27;</span>,<span class="string">&#x27;4&#x27;</span>,<span class="string">&#x27;5&#x27;</span>,<span class="string">&#x27;6&#x27;</span>,<span class="string">&#x27;7&#x27;</span>,<span class="string">&#x27;8&#x27;</span>,<span class="string">&#x27;9&#x27;</span>,<span class="string">&#x27;A&#x27;</span>,<span class="string">&#x27;B&#x27;</span>,<span class="string">&#x27;C&#x27;</span>,<span class="string">&#x27;D&#x27;</span>,<span class="string">&#x27;E&#x27;</span>,<span class="string">&#x27;F&#x27;</span>&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">int</span> n;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">int</span> t=<span class="built_in">abs</span>(n);</span><br><span class="line">    string str=<span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span>(t==<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;0&quot;</span>&lt;&lt;endl;<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(t!=<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> k=t%<span class="number">16</span>;</span><br><span class="line">        str=a[k]+str;</span><br><span class="line">        t/=<span class="number">16</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;str&lt;&lt;endl;</span><br><span class="line">    <span class="comment">//system(&quot;pause&quot;);</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
   
   
@@ -1148,7 +1150,14 @@
       <i class="fal fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
     </section>
     <section class='body'>
-      <div class="vlts-rps"><a class="item" href="\2021\06\18\t\" title="t" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">t</span></a></div></section></div>
+      <div class="vlts-rps"><a class="item" href="\2020\09\01\hello-world\" title="Hello World" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">Hello World</span><span class="excerpt">
+Quick Start
+
+Create a new post
+
+Run server
+
+Generate static ...</span></a></div></section></div>
     
     
     <div class='copyright'>
@@ -1160,7 +1169,7 @@
         
         
         
-        <p>本文永久链接是：<a href=https://nuyoah-xlh.github.io/2021/06/18/hello-world/>https://nuyoah-xlh.github.io/2021/06/18/hello-world/</a></p>
+        <p>本文永久链接是：<a href=https://nuyoah-xlh.github.io/2020/09/15/%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/>https://nuyoah-xlh.github.io/2020/09/15/%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/</a></p>
         
         
       </blockquote>
@@ -1177,7 +1186,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-19T10:36:46+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-19T15:13:15+08:00">
   <a class='notlink'>
     <i class="fal fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Jun 19, 2021</p>
@@ -1199,7 +1208,8 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/2021/06/18/hello-world/&title=Hello World - Hexo&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/2020/09/15/%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/&title=十六进制的相关转换 - 肖林航的博客&summary=
+进制转换"
           
           >
           
@@ -1211,7 +1221,8 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/2021/06/18/hello-world/&title=Hello World - Hexo&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/2020/09/15/%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/&title=十六进制的相关转换 - 肖林航的博客&summary=
+进制转换"
           
           >
           
@@ -1223,7 +1234,8 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/2021/06/18/hello-world/&title=Hello World - Hexo&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/2020/09/15/%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/&title=十六进制的相关转换 - 肖林航的博客&summary=
+进制转换"
           
           >
           
@@ -1253,11 +1265,56 @@
   
   <div class="prev-next">
     
-    <a class='prev' href='/2021/06/18/t/'>
-      <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>t</p>
-      <p class='content'></p>
+    <a class='prev' href='/2020/09/26/Git%E5%AD%A6%E4%B9%A0/'>
+      <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Git学习</p>
+      <p class='content'>
+创建版本库
+
+时光机穿梭
+
+
+
+版本回退
+工作区和暂存区
+管理修改
+撤销修改
+删除文件
+
+
+远程仓库
+
+添加远程库
+从远程库克隆
+
+
+分支管理
+
+创建与合并分支
+解决冲突
+分支管理策略
+Bug...</p>
     </a>
     
+    
+    <a class='next' href='/2020/09/01/hello-world/'>
+      <p class='title'>Hello World<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+      <p class='content'>
+Quick Start
+
+Create a new post
+
+Run server
+
+Generate static files
+
+
+Deploy to remote sites
+
+
+
+
+W...</p>
+    </a>
     
   </div>
   
@@ -1280,15 +1337,15 @@
 
 
 </div>
-      </div>
-      
+                        </div>
+                        
   
   <footer class="footer clearfix">
     
     
       
         <div class='copyright'>
-        <p>Copyright © 2020 <a href="/">黑石博客</a></p>
+        <p>Copyright © 2020 <a href="/">肖林航的博客</a></p>
 
         </div>
       
@@ -1303,11 +1360,11 @@
   </footer>
 
 
-      <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
-    </div>
-  </div>
-  <div>
-    <!-- required -->
+                            <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+                    </div>
+            </div>
+            <div>
+                <!-- required -->
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
 
@@ -1365,6 +1422,47 @@
 
 
 <!-- internal -->
+
+  
+  
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        var imgs=["https://picup.heson10.com/img/upyun/home_top_bg.webp", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.jpg"];
+        if ('true' == 'true') {
+          function shuffle(arr){
+            /*From countercurrent-time*/
+            var n = arr.length;
+            while(n--) {
+              var index = Math.floor(Math.random() * n);
+              var temp = arr[index];
+              arr[index] = arr[n];
+              arr[n] = temp;
+            }
+          }
+          shuffle(imgs);
+        }
+        if ('') {
+          $('').backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        } else {
+          $.backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        }
+      });
+    </script>
+  
 
 
 
@@ -1505,6 +1603,24 @@
     pjax_scrollrebeal();
   });
 </script>
+
+
+
+
+  <script>
+  let APlayerController = new Object();
+  APlayerController.id = '3175833810';  // 设定全局音乐播放ID
+  APlayerController.volume = '0.7';
+</script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+
+
 
 
 
@@ -1692,16 +1808,28 @@ valine.Q('*').limit(7).find().then(function (comments) {
 
 
 
+  
+<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
 
+  <script type="text/javascript">
+    $(function () {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
 
 
 
   
-    
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/comment_typing.js"></script>
 
-    <script>hljs.initHighlightingOnLoad();</script>
-  
+
+
 
 
 
@@ -1914,8 +2042,8 @@ valine.Q('*').limit(7).find().then(function (comments) {
 <!-- more -->
 
 
-    
-      
+                    
+                        
 
 
 <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
@@ -2004,10 +2132,23 @@ valine.Q('*').limit(7).find().then(function (comments) {
       try{
         pjax_fancybox();
         
+          
+          if ('') {
+            $('').backstretch("resize");
+            if($('.cover-wrapper').is(':hidden')){
+              $('.cover-backstretch').backstretch("pause");
+            }else{
+              $('.cover-backstretch').backstretch("next");
+            }
+          } else {
+            $.backstretch("resize");
+            if($('.cover-wrapper').is(':hidden')){
+              $.backstretch("pause");
+            }else{
+              $.backstretch("next");
+            }
+          }
         
-        document.querySelectorAll('pre code').forEach((block) => {
-          hljs.highlightBlock(block);
-        });
         
         
           pjax_scrollrebeal();
@@ -2040,7 +2181,8 @@ valine.Q('*').limit(7).find().then(function (comments) {
     });
 </script>
 
-    
-  </div>
-</body>
+                            
+            </div>
+    </body>
+
 </html>

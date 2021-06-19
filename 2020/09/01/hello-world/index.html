@@ -16,9 +16,18 @@
 
   <!-- 页面元数据 -->
   
-  <title>tags - 肖林航的博客</title>
+  <title>Hello World - 肖林航的博客</title>
   
 
+  
+    <meta name="description" content="
+Quick Start
+
+Create a new post
+
+Run server
+
+Generate static files">
   
 
   <!-- feed -->
@@ -678,7 +687,7 @@
 
   
   
-      <div class='cover-wrapper page featured' style="display: none;">
+      <div class='cover-wrapper post featured' style="display: none;">
         <canvas id="header_canvas" style="position:absolute;bottom:0;z-index: 1;" width="900" height="350"></canvas>
         
           <div class='cover-backstretch'></div>
@@ -766,8 +775,8 @@
 
 
 <div id="pjax-data" style="display: none">
-  <div id="pjax-ispage">false</div>
-  <div id="pjax-pageTitle"></div>
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">Hello World</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -1036,6 +1045,20 @@
 
 
 
+  <section class="widget toc-wrapper shadow floatable desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fal fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
 
   
 
@@ -1044,18 +1067,24 @@
 
 <div class='l_main'>
   <article
-  class="article post white-box reveal md shadow floatable article-type-page"
-  id="page" itemscope itemprop="blogPost">
+  class="article post white-box reveal md shadow floatable article-type-post"
+  id="post" itemscope itemprop="blogPost">
   
 
 
+  
+    
+      
+        <div class='headimg lazyload' data-bg='/img/039.jpg'></div>
+      
+    
   
   <div class="article-meta" id="top">
     
     
     
       <h1 class="title">
-        tags
+        Hello World
       </h1>
       <div class='new-meta-box'>
         
@@ -1079,7 +1108,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fal fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jun 18, 2021</p>
+    <p>发布于：Sep 1, 2020</p>
   </a>
 </div>
 
@@ -1090,7 +1119,7 @@
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="tags" data-path="/tags/">
+      <div id="lc-pv" data-title="Hello World" data-path="/2020/09/01/hello-world/">
         <i class="fal fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -1109,8 +1138,68 @@
   
 
   
+  <ul>
+<li><p><a href="#quick-start">Quick Start</a></p>
+<ul>
+<li><p><a href="#create-a-new-post">Create a new post</a></p>
+</li>
+<li><p><a href="#run-server">Run server</a></p>
+</li>
+<li><p><a href="#generate-static-files">Generate static files</a></p>
+<span id="more"></span>
+</li>
+<li><p><a href="#deploy-to-remote-sites">Deploy to remote sites</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
   
   
+  
+  <div class='footer'>
+    
+    
+    
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fal fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="\2020\09\15\十六进制的转换\" title="十六进制的相关转换" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">十六进制的相关转换</span><span class="excerpt">
+进制转换</span></a></div></section></div>
+    
+    
+    <div class='copyright'>
+      <blockquote>
+        
+        
+        <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+        
+        
+        
+        <p>本文永久链接是：<a href=https://nuyoah-xlh.github.io/2020/09/01/hello-world/>https://nuyoah-xlh.github.io/2020/09/01/hello-world/</a></p>
+        
+        
+      </blockquote>
+    </div>
+    
+    
+  </div>
   
   
   
@@ -1120,10 +1209,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-18T23:45:35+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-19T15:18:35+08:00">
   <a class='notlink'>
     <i class="fal fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jun 18, 2021</p>
+    <p>更新于：Jun 19, 2021</p>
   </a>
 </div>
 
@@ -1142,7 +1231,14 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/tags/index.html&title=tags - 肖林航的博客&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/2020/09/01/hello-world/&title=Hello World - 肖林航的博客&summary=
+Quick Start
+
+Create a new post
+
+Run server
+
+Generate static files"
           
           >
           
@@ -1154,7 +1250,14 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/tags/index.html&title=tags - 肖林航的博客&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/2020/09/01/hello-world/&title=Hello World - 肖林航的博客&summary=
+Quick Start
+
+Create a new post
+
+Run server
+
+Generate static files"
           
           >
           
@@ -1166,7 +1269,14 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/tags/index.html&title=tags - 肖林航的博客&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/2020/09/01/hello-world/&title=Hello World - 肖林航的博客&summary=
+Quick Start
+
+Create a new post
+
+Run server
+
+Generate static files"
           
           >
           
@@ -1194,6 +1304,21 @@
   
 
   
+  <div class="prev-next">
+    
+    <a class='prev' href='/2020/09/15/%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/'>
+      <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>十六进制的相关转换</p>
+      <p class='content'>
+进制转换
+
+蓝桥杯基础练习-进制转换（十六进制转八进制+十六进制转十进制+十进制转十六进制）
+一、十六进制转八进制
+12345678910111213141516171819202122232...</p>
+    </a>
+    
+    
+  </div>
+  
 </article>
 
 
@@ -1213,9 +1338,6 @@
 
 
 </div>
-
-
-
                         </div>
                         
   

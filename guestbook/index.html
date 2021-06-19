@@ -16,14 +16,14 @@
 
   <!-- 页面元数据 -->
   
-  <title>guestbook - Hexo</title>
+  <title>guestbook - 肖林航的博客</title>
   
 
   
 
   <!-- feed -->
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="肖林航的博客" type="application/atom+xml">
   
 
   <!-- import meta -->
@@ -36,6 +36,10 @@
 
   
   
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css">
+
+  
   
     
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
@@ -43,9 +47,15 @@
   
 
   
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
 
   
 
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
   
 
   
@@ -58,12 +68,6 @@
   <!-- import link -->
   
 
-  
-    
-      
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.2.0/styles/a11y-dark.css">
-
-    
   
   
     
@@ -86,8 +90,15 @@
     
 </head>
 
-<body>
-  <header class="l_header auto shadow floatable blur" style='opacity: 0' >
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/sakura.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/mouse_slide.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/clicklove.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/mouse_click.js"></script>
+
+
+        <header class="l_header auto shadow floatable blur" style='opacity: 0' >
   <div class='container'>
   <div class='wrapper'>
     <div class='nav-sub'>
@@ -104,7 +115,7 @@
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://picup.heson10.com/img/upyun/hesonlogoyasuo.gif'/>
+            <img no-lazy class='logo' src='/img/logo.png'/>
           
           
           
@@ -662,20 +673,20 @@
   </div>
 </header>
 
-  <div class="l_body">
-    <div class="l_cover">
+            <div class="l_body">
+                <div class="l_cover">
 
   
   
       <div class='cover-wrapper page featured' style="display: none;">
         <canvas id="header_canvas" style="position:absolute;bottom:0;z-index: 1;" width="900" height="350"></canvas>
         
-          <div class='cover-bg lazyload placeholder' data-bg="https://picup.heson10.com/img/upyun/home_top_bg.webp"></div>
+          <div class='cover-backstretch'></div>
         
         <div class='cover-body'>
   <div class='top'>
     
-      <img no-lazy class='logo' src='https://picup.heson10.com/img/upyun/heson10logo5.png'/>
+      <img no-lazy class='logo' src='/img/logo.png'/>
     
     
     
@@ -746,10 +757,10 @@
 
 </div>
 
-    <div class='safearea'>
-      <div class='body-wrapper' id="pjax-container">
-        
-          <!--此文件用来存放一些不方便取值的变量-->
+                    <div class='safearea'>
+                        <div class='body-wrapper' id="pjax-container">
+                            
+                                <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 
@@ -782,22 +793,22 @@
 </script>
 
 
-        
-        
+                                    
+                                        
 
 <aside class='l_side'>
   <div style="margin-bottom: 16px;border-radius: 8px;" class='shadow floatable widget_author desktop'>
     <div id="zuozhebg" class="newauthor"
-      style="background: url(https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png) center center no-repeat;background-size:cover">
+      style="background: url(/img/head.jpg) center center no-repeat;background-size:cover">
     </div>
     <div class="relive_widget_v3">
       <div class="box-author-info">
         <div class="author-face">
-          <a href="/about" target="_blank" rel="nofollow" title="关于John Doe">
-            <img no-lazy alt="" src="https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png"
+          <a href="/about" target="_blank" rel="nofollow" title="关于肖林航">
+            <img no-lazy alt="" src="/img/head.jpg"
               class="avatar avatar-200 photo" height="200" width="200"> </a>
         </div>
-        <div class="author-name">John Doe</div>
+        <div class="author-name">肖林航</div>
         <div id="author-one" class="author-one">
           <script>
             var binft = function (r) {
@@ -848,7 +859,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
 
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -860,7 +871,7 @@
             </div>
             <div class="site-state-item site-state-tags">
               <a href="/tags/">
-                <span class="site-state-item-count">0</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -923,7 +934,7 @@
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>2 篇</div>
+          <div>7 篇</div>
         </div>
       
 
@@ -933,7 +944,7 @@
           <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
         </div>
         <script>
-          var BirthDay = new Date(new Date('2020/07/06'));
+          var BirthDay = new Date(new Date('2021/06/18'));
           var today = new Date();
           var timeold = (today.getTime() - BirthDay.getTime());
           var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
@@ -945,29 +956,19 @@
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>75 字</div>
+          <div>9.1k 字</div>
         </div>
       
 
       
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          <div><span id="busuanzi_value_site_uv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 人</div>
-        </div>
-      
 
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          <div><span id="busuanzi_value_site_pv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 次</div>
-        </div>
       
 
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sat Jun 19 2021 10:39:59 GMT+0800 (新加坡标准时间)</div>
+            <div id="last-update" style="display: none;">Sat Jun 19 2021 15:38:09 GMT+0800 (新加坡标准时间)</div>
             <div id="last-update-show">2021-06-19 日</div>
           
         </div>
@@ -1062,8 +1063,8 @@
             
 <div class='new-meta-item author'>
   <a class='author' href="/" rel="nofollow">
-    <img no-lazy src="https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png">
-    <p>Heson</p>
+    <img no-lazy src="/img/head.jpg">
+    <p>肖林航</p>
   </a>
 </div>
 
@@ -1141,7 +1142,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/guestbook/index.html&title=guestbook - Hexo&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/guestbook/index.html&title=guestbook - 肖林航的博客&summary="
           
           >
           
@@ -1153,7 +1154,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/guestbook/index.html&title=guestbook - Hexo&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/guestbook/index.html&title=guestbook - 肖林航的博客&summary="
           
           >
           
@@ -1165,7 +1166,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/guestbook/index.html&title=guestbook - Hexo&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/guestbook/index.html&title=guestbook - 肖林航的博客&summary="
           
           >
           
@@ -1215,15 +1216,15 @@
 
 
 
-      </div>
-      
+                        </div>
+                        
   
   <footer class="footer clearfix">
     
     
       
         <div class='copyright'>
-        <p>Copyright © 2020 <a href="/">黑石博客</a></p>
+        <p>Copyright © 2020 <a href="/">肖林航的博客</a></p>
 
         </div>
       
@@ -1238,11 +1239,11 @@
   </footer>
 
 
-      <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
-    </div>
-  </div>
-  <div>
-    <!-- required -->
+                            <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+                    </div>
+            </div>
+            <div>
+                <!-- required -->
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
 
@@ -1300,6 +1301,47 @@
 
 
 <!-- internal -->
+
+  
+  
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        var imgs=["https://picup.heson10.com/img/upyun/home_top_bg.webp", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.jpg"];
+        if ('true' == 'true') {
+          function shuffle(arr){
+            /*From countercurrent-time*/
+            var n = arr.length;
+            while(n--) {
+              var index = Math.floor(Math.random() * n);
+              var temp = arr[index];
+              arr[index] = arr[n];
+              arr[n] = temp;
+            }
+          }
+          shuffle(imgs);
+        }
+        if ('') {
+          $('').backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        } else {
+          $.backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        }
+      });
+    </script>
+  
 
 
 
@@ -1440,6 +1482,24 @@
     pjax_scrollrebeal();
   });
 </script>
+
+
+
+
+  <script>
+  let APlayerController = new Object();
+  APlayerController.id = '3175833810';  // 设定全局音乐播放ID
+  APlayerController.volume = '0.7';
+</script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+
+
 
 
 
@@ -1627,16 +1687,28 @@ valine.Q('*').limit(7).find().then(function (comments) {
 
 
 
+  
+<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
 
+  <script type="text/javascript">
+    $(function () {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
 
 
 
   
-    
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/comment_typing.js"></script>
 
-    <script>hljs.initHighlightingOnLoad();</script>
-  
+
+
 
 
 
@@ -1849,8 +1921,8 @@ valine.Q('*').limit(7).find().then(function (comments) {
 <!-- more -->
 
 
-    
-      
+                    
+                        
 
 
 <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
@@ -1939,10 +2011,23 @@ valine.Q('*').limit(7).find().then(function (comments) {
       try{
         pjax_fancybox();
         
+          
+          if ('') {
+            $('').backstretch("resize");
+            if($('.cover-wrapper').is(':hidden')){
+              $('.cover-backstretch').backstretch("pause");
+            }else{
+              $('.cover-backstretch').backstretch("next");
+            }
+          } else {
+            $.backstretch("resize");
+            if($('.cover-wrapper').is(':hidden')){
+              $.backstretch("pause");
+            }else{
+              $.backstretch("next");
+            }
+          }
         
-        document.querySelectorAll('pre code').forEach((block) => {
-          hljs.highlightBlock(block);
-        });
         
         
           pjax_scrollrebeal();
@@ -1975,7 +2060,8 @@ valine.Q('*').limit(7).find().then(function (comments) {
     });
 </script>
 
-    
-  </div>
-</body>
+                            
+            </div>
+    </body>
+
 </html>

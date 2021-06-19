@@ -16,14 +16,19 @@
 
   <!-- 页面元数据 -->
   
-  <title>t - Hexo</title>
+  <title>Git学习 - 肖林航的博客</title>
   
 
+  
+    <meta name="description" content="
+创建版本库
+
+时光机穿梭">
   
 
   <!-- feed -->
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="肖林航的博客" type="application/atom+xml">
   
 
   <!-- import meta -->
@@ -36,6 +41,10 @@
 
   
   
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css">
+
+  
   
     
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
@@ -43,9 +52,15 @@
   
 
   
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
 
   
 
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
   
 
   
@@ -58,12 +73,6 @@
   <!-- import link -->
   
 
-  
-    
-      
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.2.0/styles/a11y-dark.css">
-
-    
   
   
     
@@ -86,8 +95,15 @@
     
 </head>
 
-<body>
-  <header class="l_header auto shadow floatable blur" style='opacity: 0' >
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/sakura.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/mouse_slide.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/clicklove.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/mouse_click.js"></script>
+
+
+        <header class="l_header auto shadow floatable blur" style='opacity: 0' >
   <div class='container'>
   <div class='wrapper'>
     <div class='nav-sub'>
@@ -104,7 +120,7 @@
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://picup.heson10.com/img/upyun/hesonlogoyasuo.gif'/>
+            <img no-lazy class='logo' src='/img/logo.png'/>
           
           
           
@@ -662,20 +678,20 @@
   </div>
 </header>
 
-  <div class="l_body">
-    <div class="l_cover">
+            <div class="l_body">
+                <div class="l_cover">
 
   
   
       <div class='cover-wrapper post featured' style="display: none;">
         <canvas id="header_canvas" style="position:absolute;bottom:0;z-index: 1;" width="900" height="350"></canvas>
         
-          <div class='cover-bg lazyload placeholder' data-bg="https://picup.heson10.com/img/upyun/home_top_bg.webp"></div>
+          <div class='cover-backstretch'></div>
         
         <div class='cover-body'>
   <div class='top'>
     
-      <img no-lazy class='logo' src='https://picup.heson10.com/img/upyun/heson10logo5.png'/>
+      <img no-lazy class='logo' src='/img/logo.png'/>
     
     
     
@@ -746,17 +762,17 @@
 
 </div>
 
-    <div class='safearea'>
-      <div class='body-wrapper' id="pjax-container">
-        
-          <!--此文件用来存放一些不方便取值的变量-->
+                    <div class='safearea'>
+                        <div class='body-wrapper' id="pjax-container">
+                            
+                                <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 
 
 <div id="pjax-data" style="display: none">
   <div id="pjax-ispage">true</div>
-  <div id="pjax-pageTitle">t</div>
+  <div id="pjax-pageTitle">Git学习</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -782,22 +798,22 @@
 </script>
 
 
-        
-        
+                                    
+                                        
 
 <aside class='l_side'>
   <div style="margin-bottom: 16px;border-radius: 8px;" class='shadow floatable widget_author desktop'>
     <div id="zuozhebg" class="newauthor"
-      style="background: url(https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png) center center no-repeat;background-size:cover">
+      style="background: url(/img/head.jpg) center center no-repeat;background-size:cover">
     </div>
     <div class="relive_widget_v3">
       <div class="box-author-info">
         <div class="author-face">
-          <a href="/about" target="_blank" rel="nofollow" title="关于John Doe">
-            <img no-lazy alt="" src="https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png"
+          <a href="/about" target="_blank" rel="nofollow" title="关于肖林航">
+            <img no-lazy alt="" src="/img/head.jpg"
               class="avatar avatar-200 photo" height="200" width="200"> </a>
         </div>
-        <div class="author-name">John Doe</div>
+        <div class="author-name">肖林航</div>
         <div id="author-one" class="author-one">
           <script>
             var binft = function (r) {
@@ -848,7 +864,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
 
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -860,7 +876,7 @@
             </div>
             <div class="site-state-item site-state-tags">
               <a href="/tags/">
-                <span class="site-state-item-count">0</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -923,7 +939,7 @@
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>2 篇</div>
+          <div>7 篇</div>
         </div>
       
 
@@ -933,7 +949,7 @@
           <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
         </div>
         <script>
-          var BirthDay = new Date(new Date('2020/07/06'));
+          var BirthDay = new Date(new Date('2021/06/18'));
           var today = new Date();
           var timeold = (today.getTime() - BirthDay.getTime());
           var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
@@ -945,29 +961,19 @@
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>75 字</div>
+          <div>9.1k 字</div>
         </div>
       
 
       
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          <div><span id="busuanzi_value_site_uv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 人</div>
-        </div>
-      
 
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          <div><span id="busuanzi_value_site_pv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 次</div>
-        </div>
       
 
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sat Jun 19 2021 10:39:59 GMT+0800 (新加坡标准时间)</div>
+            <div id="last-update" style="display: none;">Sat Jun 19 2021 15:38:09 GMT+0800 (新加坡标准时间)</div>
             <div id="last-update-show">2021-06-19 日</div>
           
         </div>
@@ -1035,6 +1041,20 @@
 
 
 
+  <section class="widget toc-wrapper shadow floatable desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fal fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93"><span class="toc-text">创建版本库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E5%85%89%E6%9C%BA%E7%A9%BF%E6%A2%AD"><span class="toc-text">时光机穿梭</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80"><span class="toc-text">版本回退</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%92%8C%E6%9A%82%E5%AD%98%E5%8C%BA"><span class="toc-text">工作区和暂存区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9"><span class="toc-text">管理修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9"><span class="toc-text">撤销修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6"><span class="toc-text">删除文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-text">远程仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93"><span class="toc-text">添加远程库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%85%8B%E9%9A%86"><span class="toc-text">从远程库克隆</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86"><span class="toc-text">分支管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF"><span class="toc-text">创建与合并分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81"><span class="toc-text">解决冲突</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5"><span class="toc-text">分支管理策略</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bug%E5%88%86%E6%94%AF"><span class="toc-text">Bug分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Feature%E5%88%86%E6%94%AF"><span class="toc-text">Feature分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E4%BA%BA%E5%8D%8F%E4%BD%9C"><span class="toc-text">多人协作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Rebase"><span class="toc-text">Rebase</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86"><span class="toc-text">标签管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE"><span class="toc-text">创建标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%A0%87%E7%AD%BE"><span class="toc-text">操作标签</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8GitHub"><span class="toc-text">使用GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89Git"><span class="toc-text">自定义Git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%BD%E7%95%A5%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6"><span class="toc-text">忽略特殊文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D"><span class="toc-text">配置别名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%AD%E5%BB%BAGit%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">搭建Git服务器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8SourceTree"><span class="toc-text">使用SourceTree</span></a></li></ol>
+    </div>
+  </section>
+
 
   
 
@@ -1049,12 +1069,18 @@
 
 
   
+    
+      
+        <div class='headimg lazyload' data-bg='/img/002.jpg'></div>
+      
+    
+  
   <div class="article-meta" id="top">
     
     
     
       <h1 class="title">
-        t
+        Git学习
       </h1>
       <div class='new-meta-box'>
         
@@ -1062,8 +1088,8 @@
             
 <div class='new-meta-item author'>
   <a class='author' href="/" rel="nofollow">
-    <img no-lazy src="https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png">
-    <p>Heson</p>
+    <img no-lazy src="/img/head.jpg">
+    <p>肖林航</p>
   </a>
 </div>
 
@@ -1078,7 +1104,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fal fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jun 18, 2021</p>
+    <p>发布于：Sep 26, 2020</p>
   </a>
 </div>
 
@@ -1089,7 +1115,7 @@
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="t" data-path="/2021/06/18/t/">
+      <div id="lc-pv" data-title="Git学习" data-path="/2020/09/26/Git%E5%AD%A6%E4%B9%A0/">
         <i class="fal fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -1108,7 +1134,238 @@
   
 
   
-  
+  <ul>
+<li><p><a href="#%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93">创建版本库</a></p>
+</li>
+<li><p><a href="#%E6%97%B6%E5%85%89%E6%9C%BA%E7%A9%BF%E6%A2%AD">时光机穿梭</a></p>
+<span id="more"></span>
+
+<ul>
+<li><a href="#%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80">版本回退</a></li>
+<li><a href="#%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%92%8C%E6%9A%82%E5%AD%98%E5%8C%BA">工作区和暂存区</a></li>
+<li><a href="#%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9">管理修改</a></li>
+<li><a href="#%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9">撤销修改</a></li>
+<li><a href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6">删除文件</a></li>
+</ul>
+</li>
+<li><p><a href="#%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93">远程仓库</a></p>
+<ul>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93">添加远程库</a></li>
+<li><a href="#%E4%BB%8E%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%85%8B%E9%9A%86">从远程库克隆</a></li>
+</ul>
+</li>
+<li><p><a href="#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86">分支管理</a></p>
+<ul>
+<li><a href="#%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF">创建与合并分支</a></li>
+<li><a href="#%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81">解决冲突</a></li>
+<li><a href="#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5">分支管理策略</a></li>
+<li><a href="#bug%E5%88%86%E6%94%AF">Bug分支</a></li>
+<li><a href="#feature%E5%88%86%E6%94%AF">Feature分支</a></li>
+<li><a href="#%E5%A4%9A%E4%BA%BA%E5%8D%8F%E4%BD%9C">多人协作</a></li>
+<li><a href="#rebase">Rebase</a></li>
+</ul>
+</li>
+<li><p><a href="#%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86">标签管理</a></p>
+<ul>
+<li><a href="#%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE">创建标签</a></li>
+<li><a href="#%E6%93%8D%E4%BD%9C%E6%A0%87%E7%AD%BE">操作标签</a></li>
+</ul>
+</li>
+<li><p><a href="#%E4%BD%BF%E7%94%A8github">使用GitHub</a></p>
+</li>
+<li><p><a href="#%E8%87%AA%E5%AE%9A%E4%B9%89git">自定义Git</a></p>
+<ul>
+<li><a href="#%E5%BF%BD%E7%95%A5%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6">忽略特殊文件</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D">配置别名</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6">配置文件</a></li>
+<li><a href="#%E6%90%AD%E5%BB%BAgit%E6%9C%8D%E5%8A%A1%E5%99%A8">搭建Git服务器</a></li>
+</ul>
+</li>
+<li><p><a href="#%E4%BD%BF%E7%94%A8sourcetree">使用SourceTree</a></p>
+</li>
+</ul>
+<h2 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h2><p>初始化一个Git仓库，使用<code>git init</code>命令。</p>
+<p>添加文件到Git仓库，分两步：</p>
+<ol>
+<li>使用命令<code>git add &lt;file&gt;</code>，注意，可反复多次使用，添加多个文件；</li>
+<li>使用命令<code>git commit -m &lt;message&gt;</code>，完成。</li>
+</ol>
+<h2 id="时光机穿梭"><a href="#时光机穿梭" class="headerlink" title="时光机穿梭"></a>时光机穿梭</h2><ul>
+<li>要随时掌握工作区的状态，使用<code>git status</code>命令。</li>
+<li>如果<code>git status</code>告诉你有文件被修改过，用<code>git diff</code>可以查看修改内容。</li>
+</ul>
+<h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><ul>
+<li><code>HEAD</code>指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令<code>git reset --hard commit_id</code>。</li>
+<li>穿梭前，用<code>git log</code>可以查看提交历史，以便确定要回退到哪个版本。</li>
+<li>要重返未来，用<code>git reflog</code>查看命令历史，以便确定要回到未来的哪个版本。</li>
+</ul>
+<h3 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h3><ul>
+<li><p><code>git add</code>命令实际上就是把要提交的所有修改放到暂存区（Stage），然后，执行<code>git commit</code>就可以一次性把暂存区的所有修改提交到分支。</p>
+</li>
+<li><p>Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支<code>master</code>，以及指向<code>master</code>的一个指针叫<code>HEAD</code>。</p>
+<p><img src="https://www.liaoxuefeng.com/files/attachments/919020037470528/0" class="lazyload placeholder" data-srcset="https://www.liaoxuefeng.com/files/attachments/919020037470528/0" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="git-repo"></p>
+</li>
+</ul>
+<h3 id="管理修改"><a href="#管理修改" class="headerlink" title="管理修改"></a>管理修改</h3><ul>
+<li>每次修改，如果不用<code>git add</code>到暂存区，那就不会加入到<code>commit</code>中。</li>
+</ul>
+<h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><ul>
+<li>场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令<code>git checkout -- file</code>。</li>
+<li>场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令<code>git reset HEAD &lt;file&gt;</code>，就回到了场景1，第二步按场景1操作。</li>
+<li>场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考<strong>版本回退</strong>一节，不过前提是没有推送到远程库。</li>
+</ul>
+<h3 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h3><ul>
+<li>命令<code>git rm</code>用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失<strong>最近一次提交后你修改的内容</strong>。</li>
+</ul>
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><h3 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h3><ul>
+<li><p>要关联一个远程库，使用命令<code>git remote add origin git@server-name:path/repo-name.git</code>；</p>
+</li>
+<li><p>关联后，使用命令<code>git push -u origin master</code>第一次推送master分支的所有内容；</p>
+</li>
+<li><p>此后，每次本地提交后，只要有必要，就可以使用命令<code>git push origin master</code>推送最新修改；</p>
+</li>
+<li><p>分布式版本系统的最大好处之一是在本地工作完全不需要考虑远程库的存在，也就是有没有联网都可以正常工作，而SVN在没有联网的时候是拒绝干活的！当有网络的时候，再把本地提交推送一下就完成了同步，真是太方便了！</p>
+</li>
+</ul>
+<h3 id="从远程库克隆"><a href="#从远程库克隆" class="headerlink" title="从远程库克隆"></a>从远程库克隆</h3><ul>
+<li><p>要克隆一个仓库，首先必须知道仓库的地址，然后使用<code>git clone</code>命令克隆。</p>
+</li>
+<li><p>Git支持多种协议，包括<code>https</code>，但<code>ssh</code>协议速度最快。</p>
+</li>
+</ul>
+<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><h3 id="创建与合并分支"><a href="#创建与合并分支" class="headerlink" title="创建与合并分支"></a>创建与合并分支</h3><ul>
+<li><p>Git鼓励大量使用分支：</p>
+</li>
+<li><p>查看分支：<code>git branch</code></p>
+</li>
+<li><p>创建分支：<code>git branch &lt;name&gt;</code></p>
+</li>
+<li><p>切换分支：<code>git checkout &lt;name&gt;</code>或者<code>git switch &lt;name&gt;</code></p>
+</li>
+<li><p>创建+切换分支：<code>git checkout -b &lt;name&gt;</code>或者<code>git switch -c &lt;name&gt;</code></p>
+</li>
+<li><p>合并某分支到当前分支：<code>git merge &lt;name&gt;</code></p>
+</li>
+<li><p>删除分支：<code>git branch -d &lt;name&gt;</code></p>
+</li>
+</ul>
+<h3 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h3><ul>
+<li><p>当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。</p>
+</li>
+<li><p>解决冲突就是把Git合并失败的文件手动编辑为我们希望的内容，再提交。</p>
+</li>
+<li><p>用<code>git log --graph</code>命令可以看到分支合并图。</p>
+</li>
+</ul>
+<h3 id="分支管理策略"><a href="#分支管理策略" class="headerlink" title="分支管理策略"></a>分支管理策略</h3><ul>
+<li><p>Git分支十分强大，在团队开发中应该充分应用。</p>
+</li>
+<li><p>合并分支时，加上<code>--no-ff</code>参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而<code>fast forward</code>合并就看不出来曾经做过合并。</p>
+</li>
+</ul>
+<h3 id="Bug分支"><a href="#Bug分支" class="headerlink" title="Bug分支"></a>Bug分支</h3><ul>
+<li><p>修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；</p>
+</li>
+<li><p>当手头工作没有完成时，先把工作现场<code>git stash</code>一下，然后去修复bug，修复后，再<code>git stash pop</code>，回到工作现场；</p>
+</li>
+<li><p>在<em>master</em>分支上修复的bug，想要合并到当前dev分支，可以用<code>git cherry-pick &lt;commit&gt;</code>命令，把bug提交的修改“复制”到当前分支，避免重复劳动。</p>
+</li>
+</ul>
+<h3 id="Feature分支"><a href="#Feature分支" class="headerlink" title="Feature分支"></a>Feature分支</h3><ul>
+<li><p>开发一个新feature，最好新建一个分支；</p>
+</li>
+<li><p>如果要丢弃一个没有被合并过的分支，可以通过<code>git branch -D &lt;name&gt;</code>强行删除。</p>
+</li>
+</ul>
+<h3 id="多人协作"><a href="#多人协作" class="headerlink" title="多人协作"></a>多人协作</h3><ul>
+<li>查看远程库信息，使用<code>git remote -v</code>；</li>
+<li>本地新建的分支如果不推送到远程，对其他人就是不可见的；</li>
+<li>从本地推送分支，使用<code>git push origin branch-name</code>，如果推送失败，先用<code>git pull</code>抓取远程的新提交；</li>
+<li>在本地创建和远程分支对应的分支，使用<code>git checkout -b branch-name origin/branch-name</code>，本地和远程分支的名称最好一致；</li>
+<li>建立本地分支和远程分支的关联，使用<code>git branch --set-upstream branch-name origin/branch-name</code>；</li>
+<li>从远程抓取分支，使用<code>git pull</code>，如果有冲突，要先处理冲突。</li>
+</ul>
+<h3 id="Rebase"><a href="#Rebase" class="headerlink" title="Rebase"></a>Rebase</h3><ul>
+<li>rebase操作可以把本地未push的分叉提交历史整理成直线；</li>
+<li>rebase的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比。</li>
+</ul>
+<h2 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h2><h3 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h3><ul>
+<li>命令<code>git tag &lt;tagname&gt;</code>用于新建一个标签，默认为<code>HEAD</code>，也可以指定一个commit id；</li>
+<li>命令<code>git tag -a &lt;tagname&gt; -m &quot;blablabla...&quot;</code>可以指定标签信息；</li>
+<li>命令<code>git tag</code>可以查看所有标签。</li>
+</ul>
+<h3 id="操作标签"><a href="#操作标签" class="headerlink" title="操作标签"></a>操作标签</h3><ul>
+<li>命令<code>git push origin &lt;tagname&gt;</code>可以推送一个本地标签；</li>
+<li>命令<code>git push origin --tags</code>可以推送全部未推送过的本地标签；</li>
+<li>命令<code>git tag -d &lt;tagname&gt;</code>可以删除一个本地标签；</li>
+<li>命令<code>git push origin :refs/tags/&lt;tagname&gt;</code>可以删除一个远程标签。</li>
+</ul>
+<h2 id="使用GitHub"><a href="#使用GitHub" class="headerlink" title="使用GitHub"></a>使用GitHub</h2><ul>
+<li>在GitHub上，可以任意Fork开源仓库；</li>
+<li>自己拥有Fork后的仓库的读写权限；</li>
+<li>可以推送pull request给官方仓库来贡献代码。</li>
+</ul>
+<h2 id="自定义Git"><a href="#自定义Git" class="headerlink" title="自定义Git"></a>自定义Git</h2><p>让Git显示颜色，会让命令输出看起来更醒目：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global color.ui true</span><br></pre></td></tr></table></figure>
+
+<h3 id="忽略特殊文件"><a href="#忽略特殊文件" class="headerlink" title="忽略特殊文件"></a>忽略特殊文件</h3><ul>
+<li>忽略某些文件时，需要编写<code>.gitignore</code>；</li>
+<li><code>.gitignore</code>文件本身要放到版本库里，并且可以对<code>.gitignore</code>做版本管理！</li>
+</ul>
+<h3 id="配置别名"><a href="#配置别名" class="headerlink" title="配置别名"></a>配置别名</h3><p>如果敲<code>git st</code>就表示<code>git status</code>那就简单多了，当然这种偷懒的办法我们是极力赞成的。</p>
+<p>我们只需要敲一行命令，告诉Git，以后<code>st</code>就表示<code>status</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global alias.st status</span><br></pre></td></tr></table></figure>
+
+<p>好了，现在敲<code>git st</code>看看效果。</p>
+<p>当然还有别的命令可以简写，很多人都用<code>co</code>表示<code>checkout</code>，<code>ci</code>表示<code>commit</code>，<code>br</code>表示<code>branch</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global alias.co checkout</span><br><span class="line">$ git config --global alias.ci commit</span><br><span class="line">$ git config --global alias.br branch</span><br></pre></td></tr></table></figure>
+
+<p>以后提交就可以简写成：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git ci -m &quot;bala bala bala...&quot;</span><br></pre></td></tr></table></figure>
+
+<p><code>--global</code>参数是全局参数，也就是这些命令在这台电脑的所有Git仓库下都有用。</p>
+<p>在<strong>撤销修改</strong>一节中，我们知道，命令<code>git reset HEAD file</code>可以把暂存区的修改撤销掉（unstage），重新放回工作区。既然是一个unstage操作，就可以配置一个<code>unstage</code>别名：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global alias.unstage &#x27;reset HEAD&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>当你敲入命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git unstage test.py</span><br></pre></td></tr></table></figure>
+
+<p>实际上Git执行的是：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset HEAD test.py</span><br></pre></td></tr></table></figure>
+
+<p>配置一个<code>git last</code>，让其显示最后一次提交信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global alias.last &#x27;log -1&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>这样，用<code>git last</code>就能显示最近一次的提交：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git last</span><br><span class="line">commit adca45d317e6d8a4b23f9811c3d7b7f0f180bfe2</span><br><span class="line">Merge: bd6ae48 291bea8</span><br><span class="line">Author: Michael Liao &lt;askxuefeng@gmail.com&gt;</span><br><span class="line">Date:   Thu Aug 22 22:49:22 2013 +0800</span><br><span class="line"></span><br><span class="line">    merge &amp; fix hello.py</span><br></pre></td></tr></table></figure>
+
+<p>甚至还有人丧心病狂地把<code>lg</code>配置成了：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global alias.lg &quot;log --color --graph --pretty=format:&#x27;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#x27; --abbrev-commit&quot;</span><br></pre></td></tr></table></figure>
+
+<p>来看看<code>git lg</code>的效果：</p>
+<p><img src="https://www.liaoxuefeng.com/files/attachments/919059728302912/0" class="lazyload placeholder" data-srcset="https://www.liaoxuefeng.com/files/attachments/919059728302912/0" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="git-lg"></p>
+<h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>配置Git的时候，加上<code>--global</code>是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。</p>
+<p>配置文件放哪了？每个仓库的Git配置文件都放在<code>.git/config</code>文件中：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$ cat .git/config </span><br><span class="line">[core]</span><br><span class="line">    repositoryformatversion = 0</span><br><span class="line">    filemode = true</span><br><span class="line">    bare = false</span><br><span class="line">    logallrefupdates = true</span><br><span class="line">    ignorecase = true</span><br><span class="line">    precomposeunicode = true</span><br><span class="line">[remote &quot;origin&quot;]</span><br><span class="line">    url = git@github.com:michaelliao/learngit.git</span><br><span class="line">    fetch = +refs/heads/*:refs/remotes/origin/*</span><br><span class="line">[branch &quot;master&quot;]</span><br><span class="line">    remote = origin</span><br><span class="line">    merge = refs/heads/master</span><br><span class="line">[alias]</span><br><span class="line">    last = log -1</span><br></pre></td></tr></table></figure>
+
+<p>别名就在<code>[alias]</code>后面，要删除别名，直接把对应的行删掉即可。</p>
+<p>而当前用户的Git配置文件放在用户主目录下的一个隐藏文件<code>.gitconfig</code>中：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ cat .gitconfig</span><br><span class="line">[alias]</span><br><span class="line">    co = checkout</span><br><span class="line">    ci = commit</span><br><span class="line">    br = branch</span><br><span class="line">    st = status</span><br><span class="line">[user]</span><br><span class="line">    name = Your Name</span><br><span class="line">    email = your@email.com</span><br></pre></td></tr></table></figure>
+
+<p>配置别名也可以直接修改这个文件，如果改错了，可以删掉文件重新通过命令配置。</p>
+<h3 id="搭建Git服务器"><a href="#搭建Git服务器" class="headerlink" title="搭建Git服务器"></a>搭建Git服务器</h3><ul>
+<li>搭建Git服务器非常简单，通常10分钟即可完成；</li>
+<li>要方便管理公钥，用<a target="_blank" rel="noopener" href="https://github.com/res0nat0r/gitosis">Gitosis</a>；</li>
+<li>要像SVN那样变态地控制权限，用<a target="_blank" rel="noopener" href="https://github.com/sitaramc/gitolite">Gitolite</a>。</li>
+</ul>
+<h2 id="使用SourceTree"><a href="#使用SourceTree" class="headerlink" title="使用SourceTree"></a>使用SourceTree</h2><ul>
+<li><p>使用SourceTree可以以图形界面操作Git，省去了敲命令的过程，对于常用的提交、分支、推送等操作来说非常方便。</p>
+</li>
+<li><p>SourceTree使用Git命令执行操作，出错时，仍然需要阅读Git命令返回的错误信息。</p>
+</li>
+</ul>
+<hr>
+
   
   
   
@@ -1121,7 +1378,14 @@
       <i class="fal fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
     </section>
     <section class='body'>
-      <div class="vlts-rps"><a class="item" href="\2021\06\18\hello-world\" title="Hello World" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">Hello World</span></a></div></section></div>
+      <div class="vlts-rps"><a class="item" href="\2020\09\01\hello-world\" title="Hello World" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">Hello World</span><span class="excerpt">
+Quick Start
+
+Create a new post
+
+Run server
+
+Generate static ...</span></a></div></section></div>
     
     
     <div class='copyright'>
@@ -1133,7 +1397,7 @@
         
         
         
-        <p>本文永久链接是：<a href=https://nuyoah-xlh.github.io/2021/06/18/t/>https://nuyoah-xlh.github.io/2021/06/18/t/</a></p>
+        <p>本文永久链接是：<a href=https://nuyoah-xlh.github.io/2020/09/26/Git%E5%AD%A6%E4%B9%A0/>https://nuyoah-xlh.github.io/2020/09/26/Git%E5%AD%A6%E4%B9%A0/</a></p>
         
         
       </blockquote>
@@ -1150,7 +1414,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-19T10:36:46+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-19T15:14:23+08:00">
   <a class='notlink'>
     <i class="fal fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Jun 19, 2021</p>
@@ -1172,7 +1436,10 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/2021/06/18/t/&title=t - Hexo&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nuyoah-xlh.github.io/2020/09/26/Git%E5%AD%A6%E4%B9%A0/&title=Git学习 - 肖林航的博客&summary=
+创建版本库
+
+时光机穿梭"
           
           >
           
@@ -1184,7 +1451,10 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/2021/06/18/t/&title=t - Hexo&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nuyoah-xlh.github.io/2020/09/26/Git%E5%AD%A6%E4%B9%A0/&title=Git学习 - 肖林航的博客&summary=
+创建版本库
+
+时光机穿梭"
           
           >
           
@@ -1196,7 +1466,10 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/2021/06/18/t/&title=t - Hexo&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nuyoah-xlh.github.io/2020/09/26/Git%E5%AD%A6%E4%B9%A0/&title=Git学习 - 肖林航的博客&summary=
+创建版本库
+
+时光机穿梭"
           
           >
           
@@ -1226,10 +1499,33 @@
   
   <div class="prev-next">
     
+    <a class='prev' href='/2020/10/01/Qt%E5%AE%9E%E7%8E%B0%E5%85%AD%E5%AD%90%E6%A3%8B%E6%B8%B8%E6%88%8F/'>
+      <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Qt实现六子棋游戏</p>
+      <p class='content'>
+游戏规则
+已实现的功能
+开发平台
+
+项目地址
+项目运行状况
+主要函数描述
+总体思路
+计分函数void Game::getScore()权值设定
+总体设计思路流程图
+主要函数流程图
+
+游戏规则1...</p>
+    </a>
     
-    <a class='next' href='/2021/06/18/hello-world/'>
-      <p class='title'>Hello World<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-      <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
+    
+    <a class='next' href='/2020/09/15/%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/'>
+      <p class='title'>十六进制的相关转换<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+      <p class='content'>
+进制转换
+
+蓝桥杯基础练习-进制转换（十六进制转八进制+十六进制转十进制+十进制转十六进制）
+一、十六进制转八进制
+12345678910111213141516171819202122232...</p>
     </a>
     
   </div>
@@ -1253,15 +1549,15 @@
 
 
 </div>
-      </div>
-      
+                        </div>
+                        
   
   <footer class="footer clearfix">
     
     
       
         <div class='copyright'>
-        <p>Copyright © 2020 <a href="/">黑石博客</a></p>
+        <p>Copyright © 2020 <a href="/">肖林航的博客</a></p>
 
         </div>
       
@@ -1276,11 +1572,11 @@
   </footer>
 
 
-      <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
-    </div>
-  </div>
-  <div>
-    <!-- required -->
+                            <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+                    </div>
+            </div>
+            <div>
+                <!-- required -->
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
 
@@ -1338,6 +1634,47 @@
 
 
 <!-- internal -->
+
+  
+  
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        var imgs=["https://picup.heson10.com/img/upyun/home_top_bg.webp", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.jpg", "https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.jpg"];
+        if ('true' == 'true') {
+          function shuffle(arr){
+            /*From countercurrent-time*/
+            var n = arr.length;
+            while(n--) {
+              var index = Math.floor(Math.random() * n);
+              var temp = arr[index];
+              arr[index] = arr[n];
+              arr[n] = temp;
+            }
+          }
+          shuffle(imgs);
+        }
+        if ('') {
+          $('').backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        } else {
+          $.backstretch(
+            imgs,
+          {
+            duration: "10000",
+            fade: "1500"
+          });
+        }
+      });
+    </script>
+  
 
 
 
@@ -1478,6 +1815,24 @@
     pjax_scrollrebeal();
   });
 </script>
+
+
+
+
+  <script>
+  let APlayerController = new Object();
+  APlayerController.id = '3175833810';  // 设定全局音乐播放ID
+  APlayerController.volume = '0.7';
+</script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+
+
 
 
 
@@ -1665,16 +2020,28 @@ valine.Q('*').limit(7).find().then(function (comments) {
 
 
 
+  
+<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
 
+  <script type="text/javascript">
+    $(function () {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
 
 
 
   
-    
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/comment_typing.js"></script>
 
-    <script>hljs.initHighlightingOnLoad();</script>
-  
+
+
 
 
 
@@ -1887,8 +2254,8 @@ valine.Q('*').limit(7).find().then(function (comments) {
 <!-- more -->
 
 
-    
-      
+                    
+                        
 
 
 <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
@@ -1977,10 +2344,23 @@ valine.Q('*').limit(7).find().then(function (comments) {
       try{
         pjax_fancybox();
         
+          
+          if ('') {
+            $('').backstretch("resize");
+            if($('.cover-wrapper').is(':hidden')){
+              $('.cover-backstretch').backstretch("pause");
+            }else{
+              $('.cover-backstretch').backstretch("next");
+            }
+          } else {
+            $.backstretch("resize");
+            if($('.cover-wrapper').is(':hidden')){
+              $.backstretch("pause");
+            }else{
+              $.backstretch("next");
+            }
+          }
         
-        document.querySelectorAll('pre code').forEach((block) => {
-          hljs.highlightBlock(block);
-        });
         
         
           pjax_scrollrebeal();
@@ -2013,7 +2393,8 @@ valine.Q('*').limit(7).find().then(function (comments) {
     });
 </script>
 
-    
-  </div>
-</body>
+                            
+            </div>
+    </body>
+
 </html>
