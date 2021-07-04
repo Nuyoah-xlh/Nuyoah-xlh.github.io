@@ -973,8 +973,8 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sat Jun 19 2021 15:38:09 GMT+0800 (新加坡标准时间)</div>
-            <div id="last-update-show">2021-06-19 日</div>
+            <div id="last-update" style="display: none;">Sun Jul 04 2021 20:38:26 GMT+0800 (新加坡标准时间)</div>
+            <div id="last-update-show">2021-07-04 日</div>
           
         </div>
         
@@ -1024,7 +1024,7 @@
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2021-06-19 日';
+            document.getElementById('last-update-show').innerHTML = '2021-07-04 日';
           }
         </script>
         
@@ -1149,7 +1149,7 @@
 <p>③Teacher（Tid，Tname，sex，address，phone，department，risk_level）<br>    教师表：包含工号Tid（唯一）、姓名Tname、性别sex（只存在‘male’，‘female’两种情况）、来源地address、电话号码phone、学院department、风险级别risk_level（只存在‘low’、‘middle’、‘high’三种情况）</p>
 <p>④Course(Cid，Cname，Tid)<br>    课程表：包含课程编号Cid（唯一）、课程名称Cname、上课教师工号Tid并作为外键</p>
 <p>⑤Score（Sid，Cid，score）<br>    成绩表：包含学生学号Cid、课程编号Cid、分数score</p>
-<p>2、E/R图<br><img src="https://img-blog.csdnimg.cn/20210121192316851.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121192316851.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p>2、E/R图<br><img src="https://img-blog.csdnimg.cn/20210121192316851.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210121192316851.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
 <h2 id="三、数据库查询展示"><a href="#三、数据库查询展示" class="headerlink" title="三、数据库查询展示"></a>三、数据库查询展示</h2><p>说明：安装MySQL，并使用了可视化工具Navicat for MySQL进行编程操作、展示，且已向表中插入数据（数据均为虚构）。</p>
 <p>1.查询所有风险等级为middle和high的师生的学号或工号、姓名、性别、来源地、电话号码、风险等级。<br>代码：</p>
 <pre><code>mysql&gt; select Sid,Sname,sex,address,phone,risk_level
@@ -1160,7 +1160,7 @@ mysql&gt; select Tid,Tname,sex,address,phone,risk_level
 -&gt; from Teacher
 -&gt; where risk_level=&#39;middle&#39; or risk_level=&#39;high&#39;;
 </code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20210121193001294.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121193001294.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210121193001294.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210121193001294.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
 <p>2.查询学习“数据库基础”课程的所有学生的学号、姓名、性别、班级、分数，并按照分数进行降序排序。</p>
 <p>代码：</p>
 <pre><code>mysql&gt; select Sid,Sname,sex,class_id,score
@@ -1168,22 +1168,22 @@ mysql&gt; select Tid,Tname,sex,address,phone,risk_level
 -&gt; where Cname=&#39;数据库基础&#39;
 -&gt; order by score desc;
 </code></pre>
-<p> <img src="https://img-blog.csdnimg.cn/20210121193037292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121193037292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p> <img src="https://img-blog.csdnimg.cn/20210121193037292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210121193037292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
 <p>3.查询所有挂科学生的学号、姓名、性别、班级、专业、所挂科目、分数，并进行属性的改名。<br>代码：</p>
 <pre><code>mysql&gt; select Sid as &#39;学号&#39;,Sname as &#39;姓名&#39;,class_id as &#39;班级&#39;,major as &#39;专业&#39;,Cname as &#39;所挂科目&#39;,score as &#39;分数&#39;
 -&gt; from Student natural join Class natural join Score natural join Course
 -&gt; where score&lt;60;
 </code></pre>
-<p> <img src="https://img-blog.csdnimg.cn/20210121194912405.png" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121194912405.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p> <img src="https://img-blog.csdnimg.cn/20210121194912405.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210121194912405.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
 <p>4.查询所有参与授课教师的工号、姓名、院系、课程名称、课程平均分，按照教师姓名分组，并进行合理的属性改名。<br>代码：</p>
 <pre><code>mysql&gt; select Tid as &#39;工号&#39;,Tname as &#39;姓名&#39;,department as &#39;院系&#39;,Cname as &#39;课程名称&#39;,avg(score) as &#39;平均分&#39;
 -&gt; from Teacher natural join Course natural join Score
 -&gt; group by Tname;
 </code></pre>
-<p> <img src="https://img-blog.csdnimg.cn/20210121194950454.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121194950454.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p> <img src="https://img-blog.csdnimg.cn/20210121194950454.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210121194950454.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
 <ol start="5">
 <li><p>查询所有参与授课教师的工号、姓名、院系、课程名称、课堂总人数、课程最高分，按照教师姓名分组，并进行合理的属性改名。<br>代码：</p>
-<p> mysql&gt; select Tid as ‘工号’,Tname as ‘姓名’,department as ‘院系’,Count(Sid) as ‘总人数’,max(score) as ‘最高分’<br> -&gt; from Teacher natural join Course natural join Score<br> -&gt; group by Tname;<br><img src="https://img-blog.csdnimg.cn/20210121195012911.png" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121195012911.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p> mysql&gt; select Tid as ‘工号’,Tname as ‘姓名’,department as ‘院系’,Count(Sid) as ‘总人数’,max(score) as ‘最高分’<br> -&gt; from Teacher natural join Course natural join Score<br> -&gt; group by Tname;<br><img src="https://img-blog.csdnimg.cn/20210121195012911.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210121195012911.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
 </li>
 </ol>
 <p>6.查询计算机系未学过离散数学的学生学号、姓名、班级、专业。<br>代码：</p>
@@ -1194,28 +1194,28 @@ mysql&gt; select Tid,Tname,sex,address,phone,risk_level
 -&gt; from Student natural join Class natural join Score natural join Course
 -&gt; where Cname=&#39;离散数学&#39;);
 </code></pre>
-<p> <img src="https://img-blog.csdnimg.cn/20210121195042484.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121195042484.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述">![</p>
+<p> <img src="https://img-blog.csdnimg.cn/20210121195042484.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210121195042484.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述">![</p>
 <p>7.查询所有学习课程数目大于等于2的学生学号、姓名、班级、专业、选课数，并进行合理的改名。<br>代码：</p>
 <pre><code>mysql&gt; select Sid as &#39;学号&#39;,Sname as &#39;姓名&#39;,class_id as &#39;班级&#39;,major as &#39;专业&#39;,count(Sid) as &#39;选课数&#39;
 -&gt; from Student natural join Score natural join Class
 -&gt; group by Sname
 -&gt; having count(Sid)&gt;=2;
 </code></pre>
-<p> <img src="https://img-blog.csdnimg.cn/20210121195253468.png" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121195253468.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p> <img src="https://img-blog.csdnimg.cn/20210121195253468.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210121195253468.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
 <p>8.查询各专业的学生人数，按照专业进行分组，并按照学生人数进行降序排序。<br>代码：</p>
 <pre><code>mysql&gt; select major as &#39;专业&#39;,count(Sid) as &#39;学生人数&#39;
 -&gt; from Student natural join Class
 -&gt; group by major
 -&gt; order by count(Sid) desc;
 </code></pre>
-<p> <img src="https://img-blog.csdnimg.cn/20210121195401917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121195401917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p> <img src="https://img-blog.csdnimg.cn/20210121195401917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210121195401917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
 <p>9.查询各学院的专业数量、学生总人数，按学院进行分组，并按照专业数量降序排序。<br>代码：</p>
 <pre><code>mysql&gt; select department as &#39;院系&#39;,count(distinct major) as &#39;专业数量&#39;,count(Sid) as &#39;学生总人数&#39;
 -&gt; from Class natural join Student
 -&gt; group by department
 -&gt; order by count(distinct major) desc;
 </code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20210121195545444.png" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210121195545444.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210121195545444.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210121195545444.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
 
   
   
@@ -1229,14 +1229,10 @@ mysql&gt; select Tid,Tname,sex,address,phone,risk_level
       <i class="fal fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
     </section>
     <section class='body'>
-      <div class="vlts-rps"><a class="item" href="\2020\09\01\hello-world\" title="Hello World" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">Hello World</span><span class="excerpt">
-Quick Start
-
-Create a new post
-
-Run server
-
-Generate static ...</span></a></div></section></div>
+      <div class="vlts-rps"><a class="item" href="\2020\10\11\Qt程序打包\" title="Qt程序简单打包" rel="bookmark "><img src="https://img-blog.csdnimg.cn/20201020210157514.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20201020210157514.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MDE1MjY5,size_16,color_FFFFFF,t_70#pic_center" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">Qt程序简单打包</span><span class="excerpt">
+1、执行released
+2、找到生成目录
+3、复制到新的文件夹里并操作</span></a></div></section></div>
     
     
     <div class='copyright'>

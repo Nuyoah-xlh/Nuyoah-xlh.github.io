@@ -2330,6 +2330,36 @@ pre {
 .article mjx-container + br {
   display: none;
 }
+@media screen and (max-width: 812px) {
+  .l_header .list-v .aplayer,
+  .l_header .list-v .aplayer-pic {
+    border-radius: 4px;
+    width: 64px;
+    height: 64px;
+  }
+}
+.aplayer-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100px;
+}
+.aplayer-container meting-js {
+  max-width: 100%;
+}
+.aplayer {
+  max-width: 500px;
+  border-radius: 4px;
+  color: var(--color-text);
+  font-family: "Noto Serif SC", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, Menlo, Monaco, monospace, sans-serif;
+}
+.aplayer .aplayer-list {
+  text-align: left;
+}
+@media screen and (max-width: 812px) {
+  .aplayer {
+    border-radius: 8px;
+  }
+}
 .highlight {
   position: relative;
 }
