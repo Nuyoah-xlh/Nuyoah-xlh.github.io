@@ -6,7 +6,7 @@
   <link href="https://nuyoah-xlh.github.io/atom.xml" rel="self"/>
   
   <link href="https://nuyoah-xlh.github.io/"/>
-  <updated>2021-07-10T12:12:18.136Z</updated>
+  <updated>2021-07-16T05:55:31.537Z</updated>
   <id>https://nuyoah-xlh.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://nuyoah-xlh.github.io/2021/07/15/VSCode+Git%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    <id>https://nuyoah-xlh.github.io/2021/07/15/VSCode+Git%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</id>
+    <published>2021-07-15T09:37:50.579Z</published>
+    <updated>2021-07-16T05:55:31.537Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="VSCode-Git轻松实现版本控制"><a href="#VSCode-Git轻松实现版本控制" class="headerlink" title="VSCode+Git轻松实现版本控制"></a>VSCode+Git轻松实现版本控制</h1><h2 id="一、首先你要安装好VSCode和Git并进行相关配置"><a href="#一、首先你要安装好VSCode和Git并进行相关配置" class="headerlink" title="一、首先你要安装好VSCode和Git并进行相关配置"></a>一、首先你要安装好VSCode和Git并进行相关配置</h2><p>VSCode官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p><p>Git官网：<a href="https://git-scm.com/">https://git-scm.com/</a></p><p>安装完成后进行Git环境变量的配置（如已配置可忽略），在cmd中输入git，出现下图所示信息则配置完成：</p><p><img src="VSCode+Git%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6.assets/image-20210715143727384.png" alt="image-20210715143727384"></p><h2 id="二、新建一个空文件夹，用VSCode打开该文件夹，然后在下图位置点击初始化存储库"><a href="#二、新建一个空文件夹，用VSCode打开该文件夹，然后在下图位置点击初始化存储库" class="headerlink" title="二、新建一个空文件夹，用VSCode打开该文件夹，然后在下图位置点击初始化存储库"></a>二、新建一个空文件夹，用VSCode打开该文件夹，然后在下图位置点击<code>初始化存储库</code></h2><p><img src="VSCode+Git%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6.assets/image-20210715173915250-1626341958421.png" alt="image-20210715173915250"></p><h2 id="三、这样你的本地库就创建好了，你可以在文件中进行修改，之后保存修改（更改位置的‘-’），然后点击√并输入提交的提示文字，接着会提示让登录GitHub账户，按照提示登录即可："><a href="#三、这样你的本地库就创建好了，你可以在文件中进行修改，之后保存修改（更改位置的‘-’），然后点击√并输入提交的提示文字，接着会提示让登录GitHub账户，按照提示登录即可：" class="headerlink" title="三、这样你的本地库就创建好了，你可以在文件中进行修改，之后保存修改（更改位置的‘+’），然后点击√并输入提交的提示文字，接着会提示让登录GitHub账户，按照提示登录即可："></a>三、这样你的本地库就创建好了，你可以在文件中进行修改，之后保存修改（更改位置的‘+’），然后点击<code>√</code>并输入提交的提示文字，接着会提示让登录GitHub账户，按照提示登录即可：</h2><p><img src="VSCode+Git%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6.assets/image-20210715174254338.png" alt="image-20210715174254338"></p><h2 id="四、选择你需要推送到的远程库（建议新建一个空的，用于测试），然后输入master确认（表示推送到master，当然你也可以选择其他分支）"><a href="#四、选择你需要推送到的远程库（建议新建一个空的，用于测试），然后输入master确认（表示推送到master，当然你也可以选择其他分支）" class="headerlink" title="四、选择你需要推送到的远程库（建议新建一个空的，用于测试），然后输入master确认（表示推送到master，当然你也可以选择其他分支）"></a>四、选择你需要推送到的远程库（建议新建一个空的，用于测试），然后输入<code>master</code>确认（表示推送到<code>master</code>，当然你也可以选择其他分支）</h2><p><img src="VSCode+Git%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6.assets/image-20210715174557527-1626342361694.png" alt="image-20210715174557527"></p><h2 id="五、点击左下方云彩图标进行推送"><a href="#五、点击左下方云彩图标进行推送" class="headerlink" title="五、点击左下方云彩图标进行推送"></a>五、点击左下方云彩图标进行推送</h2><p><img src="VSCode+Git%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6.assets/image-20210715175323105-1626342804703.png"></p><p><font color='red'> <strong>注意：当出现冲突时（例如多人协作时，你的本地仓库版本和远程端仓库版本不一致，可能在推送时出现冲突），那么你就需要先拉取远程仓库，然后再进行推送即可。</strong></font></p><p><img src="VSCode+Git%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6.assets/image-20210716134840240-1626414522089.png" alt="image-20210716134840240"></p><h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>​    VSCode不仅可以拉取、推送项目，也可以直接克隆项目，而基本不需要使用代码（但还是建议学一下Git的基础知识，便于灵活运用）。在授权你的仓库后，其他的操作会变得十分简单，起到事半功倍的效果。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;VSCode-Git轻松实现版本控制&quot;&gt;&lt;a href=&quot;#VSCode-Git轻松实现版本控制&quot; class=&quot;headerlink&quot; title=&quot;VSCode+Git轻松实现版本控制&quot;&gt;&lt;/a&gt;VSCode+Git轻松实现版本控制&lt;/h1&gt;&lt;h2 id=&quot;一</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>MySQL的多表查询</title>
