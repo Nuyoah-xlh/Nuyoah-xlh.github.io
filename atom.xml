@@ -6,7 +6,7 @@
   <link href="https://nuyoah-xlh.github.io/atom.xml" rel="self"/>
   
   <link href="https://nuyoah-xlh.github.io/"/>
-  <updated>2021-07-16T07:50:26.237Z</updated>
+  <updated>2021-07-16T08:17:33.905Z</updated>
   <id>https://nuyoah-xlh.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VSCode+Git轻松实现版本控制</title>
+    <link href="https://nuyoah-xlh.github.io/2021/07/15/VSCode+Git%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    <id>https://nuyoah-xlh.github.io/2021/07/15/VSCode+Git%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</id>
+    <published>2021-07-15T09:37:50.579Z</published>
+    <updated>2021-07-16T08:17:33.905Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="VSCode-Git轻松实现版本控制"><a href="#VSCode-Git轻松实现版本控制" class="headerlink" title="VSCode+Git轻松实现版本控制"></a>VSCode+Git轻松实现版本控制</h1><ul><li><a href="#%E4%B8%80%E9%A6%96%E5%85%88%E4%BD%A0%E8%A6%81%E5%AE%89%E8%A3%85%E5%A5%BDvscode%E5%92%8Cgit%E5%B9%B6%E8%BF%9B%E8%A1%8C%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE">一、安装及配置</a></li><li><a href="#%E4%BA%8C%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E7%94%A8vscode%E6%89%93%E5%BC%80%E8%AF%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E7%84%B6%E5%90%8E%E5%9C%A8%E4%B8%8B%E5%9B%BE%E4%BD%8D%E7%BD%AE%E7%82%B9%E5%87%BB%E5%88%9D%E5%A7%8B%E5%8C%96%E5%AD%98%E5%82%A8%E5%BA%93">二、初始化存储库</a></li><li><a href="#%E4%B8%89%E8%BF%9E%E6%8E%A5github%E8%B4%A6%E6%88%B7">三、连接Github账户</a></li><li><a href="#%E5%9B%9B%E9%80%89%E6%8B%A9%E4%BD%A0%E9%9C%80%E8%A6%81%E6%8E%A8%E9%80%81%E5%88%B0%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%BB%BA%E8%AE%AE%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%A9%BA%E7%9A%84%E7%94%A8%E4%BA%8E%E6%B5%8B%E8%AF%95%E7%84%B6%E5%90%8E%E8%BE%93%E5%85%A5master%E7%A1%AE%E8%AE%A4%E8%A1%A8%E7%A4%BA%E6%8E%A8%E9%80%81%E5%88%B0master%E5%BD%93%E7%84%B6%E4%BD%A0%E4%B9%9F%E5%8F%AF%E4%BB%A5%E9%80%89%E6%8B%A9%E5%85%B6%E4%BB%96%E5%88%86%E6%94%AF">四、提交并准备测试</a></li><li><a href="#%E4%BA%94%E7%82%B9%E5%87%BB%E5%B7%A6%E4%B8%8B%E6%96%B9%E4%BA%91%E5%BD%A9%E5%9B%BE%E6%A0%87%E8%BF%9B%E8%A1%8C%E6%8E%A8%E9%80%81">五、测试推送</a></li><li><a href="#font-colorred%E4%BA%94%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81%E9%97%AE%E9%A2%98font">六、解决冲突问题</a></li><li><a href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E">写在最后</a><h2 id="一、首先你要安装好VSCode和Git并进行相关配置"><a href="#一、首先你要安装好VSCode和Git并进行相关配置" class="headerlink" title="一、首先你要安装好VSCode和Git并进行相关配置"></a>一、首先你要安装好VSCode和Git并进行相关配置</h2></li></ul><p>VSCode官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p><p>Git官网：<a href="https://git-scm.com/">https://git-scm.com/</a></p><p>安装完成后进行Git环境变量的配置（如已配置可忽略），在cmd中输入git，出现下图所示信息则配置完成：</p><p><img src="https://i.loli.net/2021/07/16/KAV7UOclauZ4Wig.jpg" alt="image-20210715143727384.jpg"></p><h2 id="二、新建一个空文件夹，用VSCode打开该文件夹，然后在下图位置点击初始化存储库"><a href="#二、新建一个空文件夹，用VSCode打开该文件夹，然后在下图位置点击初始化存储库" class="headerlink" title="二、新建一个空文件夹，用VSCode打开该文件夹，然后在下图位置点击初始化存储库"></a>二、新建一个空文件夹，用VSCode打开该文件夹，然后在下图位置点击<code>初始化存储库</code></h2><p><img src="https://i.loli.net/2021/07/16/76EeFTLJySHPbQB.jpg" alt="image-20210715173915250.jpg"></p><h2 id="三、连接Github账户"><a href="#三、连接Github账户" class="headerlink" title="三、连接Github账户"></a>三、连接Github账户</h2><p>现在你的本地库就创建好了，你可以在文件中进行修改，之后保存修改（更改位置的‘+’），然后点击<code>√</code>并输入提交的提示文字，接着会提示让登录GitHub账户，按照提示登录即可：</p><p><img src="https://i.loli.net/2021/07/16/FvhItas4nqr6u9e.jpg" alt="image-20210715174254338.jpg"></p><h2 id="四、选择你需要推送到的远程库（建议新建一个空的，用于测试），然后输入master确认（表示推送到master，当然你也可以选择其他分支）"><a href="#四、选择你需要推送到的远程库（建议新建一个空的，用于测试），然后输入master确认（表示推送到master，当然你也可以选择其他分支）" class="headerlink" title="四、选择你需要推送到的远程库（建议新建一个空的，用于测试），然后输入master确认（表示推送到master，当然你也可以选择其他分支）"></a>四、选择你需要推送到的远程库（建议新建一个空的，用于测试），然后输入<code>master</code>确认（表示推送到<code>master</code>，当然你也可以选择其他分支）</h2><p><img src="https://i.loli.net/2021/07/16/j74rEDhZVeSKk2C.jpg" alt="image-20210715174557527.jpg"></p><h2 id="五、点击左下方云彩图标进行推送"><a href="#五、点击左下方云彩图标进行推送" class="headerlink" title="五、点击左下方云彩图标进行推送"></a>五、点击左下方云彩图标进行推送</h2><p><img src="https://i.loli.net/2021/07/16/d6Jfmz3erDjtkxb.jpg" alt="image-20210715175323105.jpg"></p><h2 id="五、解决冲突问题"><a href="#五、解决冲突问题" class="headerlink" title="五、解决冲突问题"></a><font color='red'>五、解决冲突问题</font></h2><p><font color='red'> <strong>注意：当出现冲突时（例如多人协作时，你的本地仓库版本和远程端仓库版本不一致，可能在推送时出现冲突），那么你就需要先拉取远程仓库，然后再进行推送即可。</strong></font></p><p><img src="https://i.loli.net/2021/07/16/DUTG8rBLe9zHMAN.jpg" alt="image-20210716134840240-1626414522089.jpg"></p><h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>​    VSCode不仅可以拉取、推送项目，也可以直接克隆项目，而基本不需要使用代码（但还是建议学一下Git的基础知识，便于灵活运用）。在授权你的仓库后，其他的操作会变得十分简单，起到事半功倍的效果。</p>]]></content>
+    
+    
+    <summary type="html">本文简要描述使用VSCode内置Git工具进行版本控制的做法。</summary>
+    
+    
+    
+    <category term="Git" scheme="https://nuyoah-xlh.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://nuyoah-xlh.github.io/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>MySQL的多表查询</title>
@@ -55,27 +76,6 @@
     
     
     <category term="QT" scheme="https://nuyoah-xlh.github.io/tags/QT/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VSCode+Git轻松实现版本控制</title>
-    <link href="https://nuyoah-xlh.github.io/2020/10/06/VSCode+Git%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
-    <id>https://nuyoah-xlh.github.io/2020/10/06/VSCode+Git%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</id>
-    <published>2020-10-06T14:06:18.000Z</published>
-    <updated>2021-07-16T07:37:24.434Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="VSCode-Git轻松实现版本控制"><a href="#VSCode-Git轻松实现版本控制" class="headerlink" title="VSCode+Git轻松实现版本控制"></a>VSCode+Git轻松实现版本控制</h1><ul><li><a href="#%E4%B8%80%E9%A6%96%E5%85%88%E4%BD%A0%E8%A6%81%E5%AE%89%E8%A3%85%E5%A5%BDvscode%E5%92%8Cgit%E5%B9%B6%E8%BF%9B%E8%A1%8C%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE">一、安装及配置</a></li><li><a href="#%E4%BA%8C%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E7%94%A8vscode%E6%89%93%E5%BC%80%E8%AF%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E7%84%B6%E5%90%8E%E5%9C%A8%E4%B8%8B%E5%9B%BE%E4%BD%8D%E7%BD%AE%E7%82%B9%E5%87%BB%E5%88%9D%E5%A7%8B%E5%8C%96%E5%AD%98%E5%82%A8%E5%BA%93">二、初始化存储库</a></li><li><a href="#%E4%B8%89%E8%BF%9E%E6%8E%A5github%E8%B4%A6%E6%88%B7">三、连接Github账户</a></li><li><a href="#%E5%9B%9B%E9%80%89%E6%8B%A9%E4%BD%A0%E9%9C%80%E8%A6%81%E6%8E%A8%E9%80%81%E5%88%B0%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%BB%BA%E8%AE%AE%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%A9%BA%E7%9A%84%E7%94%A8%E4%BA%8E%E6%B5%8B%E8%AF%95%E7%84%B6%E5%90%8E%E8%BE%93%E5%85%A5master%E7%A1%AE%E8%AE%A4%E8%A1%A8%E7%A4%BA%E6%8E%A8%E9%80%81%E5%88%B0master%E5%BD%93%E7%84%B6%E4%BD%A0%E4%B9%9F%E5%8F%AF%E4%BB%A5%E9%80%89%E6%8B%A9%E5%85%B6%E4%BB%96%E5%88%86%E6%94%AF">四、提交并准备测试</a></li><li><a href="#%E4%BA%94%E7%82%B9%E5%87%BB%E5%B7%A6%E4%B8%8B%E6%96%B9%E4%BA%91%E5%BD%A9%E5%9B%BE%E6%A0%87%E8%BF%9B%E8%A1%8C%E6%8E%A8%E9%80%81">五、测试推送</a></li><li><a href="#font-colorred%E4%BA%94%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81%E9%97%AE%E9%A2%98font">六、解决冲突问题</a></li><li><a href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E">写在最后</a><h2 id="一、首先你要安装好VSCode和Git并进行相关配置"><a href="#一、首先你要安装好VSCode和Git并进行相关配置" class="headerlink" title="一、首先你要安装好VSCode和Git并进行相关配置"></a>一、首先你要安装好VSCode和Git并进行相关配置</h2></li></ul><p>VSCode官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p><p>Git官网：<a href="https://git-scm.com/">https://git-scm.com/</a></p><p>安装完成后进行Git环境变量的配置（如已配置可忽略），在cmd中输入git，出现下图所示信息则配置完成：</p><p><img src="https://i.loli.net/2021/07/16/KAV7UOclauZ4Wig.jpg" alt="image-20210715143727384.jpg"></p><h2 id="二、新建一个空文件夹，用VSCode打开该文件夹，然后在下图位置点击初始化存储库"><a href="#二、新建一个空文件夹，用VSCode打开该文件夹，然后在下图位置点击初始化存储库" class="headerlink" title="二、新建一个空文件夹，用VSCode打开该文件夹，然后在下图位置点击初始化存储库"></a>二、新建一个空文件夹，用VSCode打开该文件夹，然后在下图位置点击<code>初始化存储库</code></h2><p><img src="https://i.loli.net/2021/07/16/76EeFTLJySHPbQB.jpg" alt="image-20210715173915250.jpg"></p><h2 id="三、连接Github账户"><a href="#三、连接Github账户" class="headerlink" title="三、连接Github账户"></a>三、连接Github账户</h2><p>现在你的本地库就创建好了，你可以在文件中进行修改，之后保存修改（更改位置的‘+’），然后点击<code>√</code>并输入提交的提示文字，接着会提示让登录GitHub账户，按照提示登录即可：</p><p><img src="https://i.loli.net/2021/07/16/FvhItas4nqr6u9e.jpg" alt="image-20210715174254338.jpg"></p><h2 id="四、选择你需要推送到的远程库（建议新建一个空的，用于测试），然后输入master确认（表示推送到master，当然你也可以选择其他分支）"><a href="#四、选择你需要推送到的远程库（建议新建一个空的，用于测试），然后输入master确认（表示推送到master，当然你也可以选择其他分支）" class="headerlink" title="四、选择你需要推送到的远程库（建议新建一个空的，用于测试），然后输入master确认（表示推送到master，当然你也可以选择其他分支）"></a>四、选择你需要推送到的远程库（建议新建一个空的，用于测试），然后输入<code>master</code>确认（表示推送到<code>master</code>，当然你也可以选择其他分支）</h2><p><img src="https://i.loli.net/2021/07/16/j74rEDhZVeSKk2C.jpg" alt="image-20210715174557527.jpg"></p><h2 id="五、点击左下方云彩图标进行推送"><a href="#五、点击左下方云彩图标进行推送" class="headerlink" title="五、点击左下方云彩图标进行推送"></a>五、点击左下方云彩图标进行推送</h2><p><img src="https://i.loli.net/2021/07/16/d6Jfmz3erDjtkxb.jpg" alt="image-20210715175323105.jpg"></p><h2 id="五、解决冲突问题"><a href="#五、解决冲突问题" class="headerlink" title="五、解决冲突问题"></a><font color='red'>五、解决冲突问题</font></h2><p><font color='red'> <strong>注意：当出现冲突时（例如多人协作时，你的本地仓库版本和远程端仓库版本不一致，可能在推送时出现冲突），那么你就需要先拉取远程仓库，然后再进行推送即可。</strong></font></p><p><img src="https://i.loli.net/2021/07/16/DUTG8rBLe9zHMAN.jpg" alt="image-20210716134840240-1626414522089.jpg"></p><h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>​    VSCode不仅可以拉取、推送项目，也可以直接克隆项目，而基本不需要使用代码（但还是建议学一下Git的基础知识，便于灵活运用）。在授权你的仓库后，其他的操作会变得十分简单，起到事半功倍的效果。</p>]]></content>
-    
-    
-    <summary type="html">本文简要描述使用VSCode内置Git工具进行版本控制的做法。</summary>
-    
-    
-    
-    <category term="Git" scheme="https://nuyoah-xlh.github.io/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://nuyoah-xlh.github.io/tags/Git/"/>
     
   </entry>
   
