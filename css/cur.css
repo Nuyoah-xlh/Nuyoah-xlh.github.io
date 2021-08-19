@@ -1,1 +1,35 @@
-body{cursor:url(https://i.loli.net/2021/08/14/dMJRfwUyEoIhcej.png),default!important}div{cursor:url(https://i.loli.net/2021/08/14/dMJRfwUyEoIhcej.png),default!important}a:hover{cursor:url(https://i.loli.net/2021/08/14/ebFQJrYXnsUqxNd.png),pointer!important}a:hover span{cursor:url(https://i.loli.net/2021/08/14/ebFQJrYXnsUqxNd.png),pointer!important}div:hover img{cursor:url(https://i.loli.net/2021/08/14/ebFQJrYXnsUqxNd.png),pointer!important}div:hover span{cursor:url(https://i.loli.net/2021/08/14/ebFQJrYXnsUqxNd.png),pointer!important}div:hover button{cursor:url(https://i.loli.net/2021/08/14/yjV7NxQHRrwsat8.png),pointer!important}div:hover textarea{cursor:url(https://i.loli.net/2021/08/14/yjV7NxQHRrwsat8.png),pointer!important}div:hover input{cursor:url(https://i.loli.net/2021/08/14/yjV7NxQHRrwsat8.png),pointer!important}
+body {
+    cursor: url("https://i.loli.net/2021/08/14/dMJRfwUyEoIhcej.png"), default !important;
+}
+
+div {
+    cursor: url("https://i.loli.net/2021/08/14/dMJRfwUyEoIhcej.png"), default !important;
+}
+
+a:hover {
+    cursor: url("https://i.loli.net/2021/08/14/ebFQJrYXnsUqxNd.png"), pointer !important;
+}
+
+a:hover span {
+    cursor: url("https://i.loli.net/2021/08/14/ebFQJrYXnsUqxNd.png"), pointer !important;
+}
+
+div:hover img {
+    cursor: url("https://i.loli.net/2021/08/14/ebFQJrYXnsUqxNd.png"), pointer !important;
+}
+
+div:hover span {
+    cursor: url("https://i.loli.net/2021/08/14/ebFQJrYXnsUqxNd.png"), pointer !important;
+}
+
+div:hover button {
+    cursor: url("https://i.loli.net/2021/08/14/yjV7NxQHRrwsat8.png"), pointer !important;
+}
+
+div:hover textarea {
+    cursor: url("https://i.loli.net/2021/08/14/yjV7NxQHRrwsat8.png"), pointer !important;
+}
+
+div:hover input {
+    cursor: url("https://i.loli.net/2021/08/14/yjV7NxQHRrwsat8.png"), pointer !important;
+}
