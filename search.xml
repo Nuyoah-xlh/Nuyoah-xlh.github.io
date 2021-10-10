@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>PR快速入门技巧</title>
+      <link href="/2021/10/10/PR%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+      <url>/2021/10/10/PR%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><ul><li><p>开启</p><ul><li>新建项目后，可以新建左下角新建一个素材箱，在其中导入素材，并可以拖动某个素材到右下角进行编辑/查看。</li></ul></li><li><p>裁剪素材</p><ul><li>在工具栏找到【剃刀工具】，对素材切割，后可用【选择工具】进行删除等操作。</li><li>裁剪之后，可以在素材左边出现【红色中括号】后，向左拖动即可恢复原长度。</li></ul></li><li><p>拼接素材</p><ul><li>直接在素材中将素材拖到右边编辑区的素材尾部即可。</li></ul></li><li><p>处理声音</p><ul><li><p>将声音素材导入素材箱后，再拖到右边编辑区即可。对应左边的区域，选中【S】后可对该声音独奏，选中【M】可对该声音静音。</p></li><li><p>选中某些声音后，可点击左上方的音频剪辑混和器进行音量调节等操作。</p></li></ul><p><img src="https://cdn.jsdelivr.net/gh/Nuyoah-xlh/jsDelivr-CDN/img/article_pic/Snipaste_2021-10-10_15-59-25.jpg" alt="20201020210157514.jpg"></p></li><li><p>字幕</p><ul><li>【文件】-&gt;【新建】-&gt;【旧版标题】即可设置字幕，然后从素材中将字幕拖到编辑区。</li><li>alt+滚轮可对其进行缩放。</li></ul></li><li><p>视频重叠</p><ul><li>将一个视频素材放到另一个视频上方，双击右上角视频即可调节大小和位置。</li></ul></li><li><p>制作动态弹幕</p><ul><li>用上面的方法添加字幕的方法添加一定数量的文字，然后把弹幕素材拖到编辑区，单击弹幕素材找左上角【效果控件】-&gt;【运动】-&gt;【位置】（鼠标放到坐标旁边可以移动到初始位置），点击左边【小闹钟】再次拖动到最终位置。</li></ul></li><li><p>素材加速/减速</p><ul><li>选中编辑区的素材后，右击选择【速度/持续时间】，可进行某个素材的加速/减速。</li><li>对素材的某一小段进行变速时，可以先用【剃刀工具】进行切割，再选中进行上述变速操作。</li><li><strong>注意：</strong>对中间某素材减速时，可能会被后面的素材遮挡，所以要先把后面的素材往后拖，变速后再接上。</li></ul></li><li><p>视频过渡效果</p><ul><li>点击上方【效果】-&gt;【视频过渡/音频过渡】-&gt;拖到连接处即可。</li></ul></li><li><p>制作鬼畜等效果</p><ul><li>双击某素材进行预览，对某段素材标记【入点】和【出点】，再将大画面拖到编辑区即可。还可进行ctrl+c、ctrl+v进行复制粘贴。</li></ul></li><li><p>制作片尾字幕</p><ul><li>将片尾剪断，选中末尾片段，在左上角进行编辑，先在某位置点击【位置】、【缩放】左边的小闹钟，然后将右边进度条拖到另一位置，改变视频图像的大小和位置即可。然后使用【制作动态弹幕】的方法添加滚动字幕。</li></ul></li><li><p>去水印</p><ul><li>先将素材拖到编辑区</li><li>【素材框】-&gt;【新建项目】-&gt;【调整图层】，将其拖到编辑区</li><li>在【效果】处搜索【中间值】，将其拖到编辑区的调整图层上，然后选择左上方的【中间值】，选择一个样式调整，再调节【半径】，直到水印消失。</li></ul></li><li><p>导出</p><ul><li>点击【文件】-&gt;【导出】-&gt;【媒体】-&gt;【格式：H.264(即为MP4格式)】-&gt;勾选【导出视频】、【导出音频】，导出即可。</li></ul></li></ul><p>​    </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> PR </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PR </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PS快速入门技巧</title>
+      <link href="/2021/10/10/PS%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+      <url>/2021/10/10/PS%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><ul><li><p>置入嵌入对象</p><p>将图片放到另一张图片中</p><p><img src="https://cdn.jsdelivr.net/gh/Nuyoah-xlh/jsDelivr-CDN/img/article_pic/Snipaste_2021-10-10_14-39-43.jpg" alt="20201020210157514.jpg"></p></li><li><p>新建的文档，可以用左边工具栏“前景色”，alt+delete改变背景色</p><p><img src="https://cdn.jsdelivr.net/gh/Nuyoah-xlh/jsDelivr-CDN/img/article_pic/Snipaste_2021-10-10_14-41-20.jpg" alt="20201020210157514.jpg"></p></li><li><p>alt+鼠标滚轮可以放大缩小图片</p></li><li><p>插入文字后，用ctrl+鼠标左键进行调整角度和放大缩小</p></li><li><p>双击图层可以弹出图层样式设置</p></li><li><p>保存格式</p><ul><li>PSD格式：可保留痕迹，便于再次进行编辑</li><li>JPG格式：通用的图片格式</li><li>PNG格式：保留透明区域（jpg会自动填充白色)</li></ul></li><li><p>移动工具</p><ul><li>选择移动工具后，可调节上方的选项。其中，勾选<strong>自动选择</strong>后，可以灵活移动图层。勾选<strong>显示变换控件</strong>后，可以显示被移动的控件，且支持放大缩小，注意：<strong>直接缩放不会改变宽高比例，按住shift后再进行缩放可自由调节</strong>。</li><li>将鼠标移动到某个图层外面，按住不动可进行拖动旋转。</li><li>鼠标点击图层后，快捷键 ctrl+T可进行如上操作，尽量<strong>不开启“显示变换控件”</strong>。调节后双击图层确定。</li><li>组：ctrl+鼠标点击右边图层名称，选择多个图层作为一组，可进行同时移动、缩放等操作。选择多个图层后，点击下图图标可进行创建组。</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Nuyoah-xlh/jsDelivr-CDN/img/article_pic/Snipaste_2021-10-10_15-25-24.jpg" alt="20201020210157514.jpg"></p></li><li><p>图层复制/删除/新建</p><ul><li>复制快捷键：ctrl+j</li><li>删除快捷键：delete</li><li>选中图像移动/缩放：ctrl+t</li><li>新建图层：见右下角图标</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Nuyoah-xlh/jsDelivr-CDN/img/article_pic/Snipaste_2021-10-10_15-26-55.jpg" alt="20201020210157514.jpg"></p></li><li><p>回退</p><ul><li>快捷键：ctrl+z</li></ul></li><li><p>对齐图层</p><ul><li>多选图层后，可以使用上方对齐功能</li></ul><p>  <img src="https://cdn.jsdelivr.net/gh/Nuyoah-xlh/jsDelivr-CDN/img/article_pic/Snipaste_2021-10-10_15-27-56.jpg" alt="20201020210157514.jpg"></p></li><li><p>色相</p><ul><li>选中图层后，点击图像-&gt;调整-&gt;色相/饱和度</li></ul></li><li><p>选区</p><ul><li>左边栏第二个矩形选框工具，用鼠标可以拖出矩形框，按照shift同时拖动鼠标可以画出正方形/圆形。</li><li>选区后可以对其进行单独调整。</li><li>选区后可右击选择“变换选区”进行调整</li><li>点击下图第二个图标可以实现多选。</li></ul><p>  <img src="https://cdn.jsdelivr.net/gh/Nuyoah-xlh/jsDelivr-CDN/img/article_pic/Snipaste_2021-10-10_15-29-25.jpg" alt="20201020210157514.jpg"></p><ul><li>椭圆形选框方法类似。</li><li>快捷键：<ul><li>多选几个选区：shift+画图</li><li>减选区：alt+画图</li></ul></li></ul></li><li><p>羽化 </p><ul><li>羽化后，边框可以更柔和，有一个虚化的效果 </li></ul><p>  <img src="https://cdn.jsdelivr.net/gh/Nuyoah-xlh/jsDelivr-CDN/img/article_pic/Snipaste_2021-10-10_15-31-24.jpg" alt="20201020210157514.jpg"></p></li><li><p>套索工具</p><ul><li>左边栏第三个工具图标，可以进行不规则选区。对选区可进行羽化</li><li>快捷键ctrl+T可以进行自由变换（旋转等操作)</li><li>其中的多变形套索工具可以画直线，点与点之间连线进行抠图。</li><li>磁性套索工具，可以智能识别形状并增加节点。</li><li>在使用磁性套索工具时可以按住alt键同时操作，可以在磁性和多边形套索中不断切换。</li></ul></li><li><p>抠完图后，可以使用移动工具直接将其拖到另一个打开的文件中进行拼接</p></li><li><p>快速选择工具</p><ul><li>左边工具栏第四个，按住alt+右键进行拖动，可改变圆的大小。可自动框选特定形状。<ul><li>左上方的菜单栏可选择增加选区或减少选区。</li><li>上方的【选择主体】，可以自动识别并对主体部分选区。</li><li>上方的【选择并遮住】，可以对选区的边缘进行处理。</li></ul></li></ul></li><li><p>魔棒工具     </p><ul><li>【容差】可以改变选区范围</li><li>可以和选择工具交替使用</li></ul></li><li><p>对头发抠图</p><ul><li>扣大致图像后-&gt;【选择并遮住】-&gt;左边栏【调整边缘画笔工具】-&gt;【净化颜色】/羽化/平滑</li></ul></li><li><p>裁剪工具</p><ul><li>可对照片进行裁剪，还可以设定进行1：2裁剪 </li></ul></li><li><p>图片拉伸后，选择上方【内容识别】可对周围自动识别填充</p></li><li><p>【切片工具】把照片切成几份。更精准方法：打开【视图】-&gt;【标尺】，把标尺拖出形成参考线，点击上方【基于参考线的切片】，然后点击【文件】-&gt;【导出】-&gt;【存储为Web所用格式】-&gt;【JPEG】格式-&gt;【存储为html和图像】，可以导出切片和一个html文件。超链接：对某一切片右击后选择【编辑切片选项】，将特定网址复制到URL上，再进行上述导出操作即可。</p></li><li><p>剪贴蒙版</p><ul><li>在空白上新建一个选区后，置入对象，对右边名称右击后选择剪贴蒙版。还可以输入文字后插入图片再剪贴蒙版。</li></ul></li><li><p>显示取样环</p><ul><li>可以显示出取样环，取色更加清楚。</li></ul></li><li><p>人物祛斑</p><ul><li>使用污点修复画笔工具快捷修复。</li><li>使用修补工具框选后拖到正常区域。</li><li>内容感知移动工具，可对某区域进行框选并移动，且修复原区域（调节上方的结构和颜色可以进行细节优化）。</li></ul></li><li><p>模糊工具组</p><ul><li>使图像模糊，看起来更光滑</li></ul></li><li><p>调色</p><ul><li>图像-&gt;调整-&gt;曲线</li><li>图像-&gt;调整-&gt;色彩平衡    //可以调节色彩</li></ul></li><li><p>仿制图章工具组</p><ul><li>按下alt同时点击鼠标右键可以调节圆圈大小</li><li>在某区域按下alt键同时点击鼠标左键即可选色，然后在另一个区域长按鼠标左键进行复制。</li><li>【硬度】调小后可以更加柔和。</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> PS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决-打包web项目后，war包没有resource目录下的配置文件</title>
       <link href="/2021/09/16/%E8%A7%A3%E5%86%B3-Maven%E6%89%93%E5%8C%85SSM%E5%90%8Ewar%E5%8C%85%E6%B2%A1%E6%9C%89resource%E8%B5%84%E6%BA%90%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
       <url>/2021/09/16/%E8%A7%A3%E5%86%B3-Maven%E6%89%93%E5%8C%85SSM%E5%90%8Ewar%E5%8C%85%E6%B2%A1%E6%9C%89resource%E8%B5%84%E6%BA%90%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</url>
@@ -213,14 +263,14 @@
       
       <categories>
           
-          <category> 软件/工具 </category>
+          <category> IDEA </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 软件/工具 </tag>
+            <tag> IDEA </tag>
             
         </tags>
       
