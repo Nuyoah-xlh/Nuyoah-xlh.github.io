@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>博客基本操作简介</title>
+      <link href="/post/b8e50291.html"/>
+      <url>/post/b8e50291.html</url>
+      
+        <content type="html"><![CDATA[<p>​本博客基于Hexo、Butterfly、Github等实现~  </p><h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建一篇文章"><a href="#创建一篇文章" class="headerlink" title="创建一篇文章"></a>创建一篇文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;文章1&quot;</span></span><br></pre></td></tr></table></figure><h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><h3 id="本地查看"><a href="#本地查看" class="headerlink" title="本地查看"></a>本地查看</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><h3 id="部署到远程"><a href="#部署到远程" class="headerlink" title="部署到远程"></a>部署到远程</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><h3 id="文章页头部参数"><a href="#文章页头部参数" class="headerlink" title="文章页头部参数"></a>文章页头部参数</h3><p><img src="/post/b8e50291/image-20240609224405213.png" alt="image-20240609224405213"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
