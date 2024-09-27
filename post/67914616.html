@@ -1,0 +1,372 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hadoop入门 | xlhの博客</title><meta name="author" content="xlh"><meta name="copyright" content="xlh"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Hadoop入门知识。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hadoop入门">
+<meta property="og:url" content="http://example.com/post/67914616.html">
+<meta property="og:site_name" content="xlhの博客">
+<meta property="og:description" content="Hadoop入门知识。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/image/pics/pic%20(30).jpg">
+<meta property="article:published_time" content="2022-10-20T09:19:24.000Z">
+<meta property="article:modified_time" content="2024-09-27T05:50:46.707Z">
+<meta property="article:author" content="xlh">
+<meta property="article:tag" content="后端工具&#x2F;框架">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/image/pics/pic%20(30).jpg"><link rel="shortcut icon" href="/image/logo.png"><link rel="canonical" href="http://example.com/post/67914616.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":false,"highlightLang":true,"highlightHeightLimit":280},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hadoop入门',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-09-27 13:50:46'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/image/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/image/pics/pic%20(30).jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="xlhの博客"><img class="site-icon" src="/image/logo.png"/><span class="site-name">xlhの博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Hadoop入门</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-20T09:19:24.000Z" title="发表于 2022-10-20 17:19:24">2022-10-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-27T05:50:46.707Z" title="更新于 2024-09-27 13:50:46">2024-09-27</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>8分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Hadoop入门"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p> Hadoop是一款开源软件，允许用户使用简单的编程模型实现跨机器集群对海量数据进行分布式计算处理。</p>
+<p><strong>核心组件：</strong></p>
+<ul>
+<li>Hadoop HDFS（分布式文件存储系统）：解决海量数据存储</li>
+<li>Hadoop YARN（集群资源管理和任务调度框架）：解决资源任务调度</li>
+<li>Hadoop MapReduce（分布式计算框架）：解决海量数据计算</li>
+</ul>
+<p><strong>现状：</strong></p>
+<ul>
+<li>HDFS作为分布式文件存储系统，处在生态圈的底层与核心地位；</li>
+<li>YARN作为分布式通用的集群资源管理系统和任务调度平台，支撑各种计算引擎运行，保证了Hadoop地位；</li>
+<li>MapReduce作为大数据生态圈第一代分布式计算引擎，由于自身设计的模型所产生的弊端，导致企业一线几乎不再直接使用MapReduce进行编程处理，但是很多软件的底层依然在使用MapReduce引擎来处理数据。</li>
+</ul>
+<p><strong>发行版本：</strong></p>
+<ul>
+<li>Apache开源社区版本：<a target="_blank" rel="noopener" href="https://hadoop.apache.org/">https://hadoop.apache.org/</a></li>
+</ul>
+<h2 id="Hadoop集群搭建"><a href="#Hadoop集群搭建" class="headerlink" title="Hadoop集群搭建"></a>Hadoop集群搭建</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ul>
+<li>Hadoop集群包括两个集群：HDFS集群、YARN集群</li>
+<li>两个集群逻辑上分离、通常物理上在一起</li>
+<li>两个集群都是标准的主从架构集群</li>
+</ul>
+<p><img src="/post/67914616/Snipaste_2022-10-21_16-57-34.jpg" alt="0.jpg"></p>
+<h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><ul>
+<li>在主机上执行<code>start-all.sh</code>，并用jps查看java进程</li>
+</ul>
+<p><img src="/post/67914616/Snipaste_2022-10-23_20-49-38.jpg" alt="0.jpg"></p>
+<ul>
+<li>可在两个ui界面管理<ul>
+<li>HDFS集群：<a target="_blank" rel="noopener" href="http://namenode_host:9870/">http://namenode_host:9870</a></li>
+<li>YARN集群：<a target="_blank" rel="noopener" href="http://resourcemanager_host:8088/">http://resourcemanager_host:8088</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="Hadoop体验"><a href="#Hadoop体验" class="headerlink" title="Hadoop体验"></a>Hadoop体验</h3><ul>
+<li>shell命令<ul>
+<li><code>hadoop fs -mkdir /itcast</code>：创建文件夹</li>
+<li><code>hadoop fs -put zookeeper.out /itcast</code> ：上传文件</li>
+</ul>
+</li>
+<li>UI页面</li>
+</ul>
+<p><img src="/post/67914616/Snipaste_2022-10-23_21-45-11.jpg" alt="0.jpg"></p>
+<h2 id="HDFS"><a href="#HDFS" class="headerlink" title="HDFS"></a>HDFS</h2><h3 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>HDFS，意为：Hadoop分布式文件系统；</li>
+<li>HDFS主要是解决大数据如何存储问题的。分布式意味着是HDFS是横跨在多台计算机上的存储系统；</li>
+<li>高度容错，非常适于存储大型数据(比如TB 和PB)</li>
+<li>HDFS使用多台计算机存储文件, 并且提供统一的访问接口, 像是访问一个普通文件系统一样使用分布式文件系统</li>
+</ul>
+<h3 id="设计目标"><a href="#设计目标" class="headerlink" title="设计目标"></a>设计目标</h3><ul>
+<li>硬件故障是常态，HDFS可能有成百上千的服务器组成，每一个组件都有可能出现故障。因此故障检测和自动快速恢复是HDFS的核心架构目标</li>
+<li>HDFS上的应用主要是以流式读取数据。HDFS被设计成用于批处理，而不是用户交互式的。相较于数据访问的反应时间，更注重数据访问的高吞吐量</li>
+<li>支持大文件</li>
+<li>大部分文件：一个文件一旦创建、写入、关闭之后就不需要修改</li>
+<li>可从一个平台轻松移植到另一个平台</li>
+<li>应用场景：大文件、数据流式访问、一次写入多次读取、低成本</li>
+<li>不适用场景：小文件、频繁任意修改、数据交互式访问</li>
+</ul>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><ul>
+<li>HDFS集群是标准的master&#x2F;slave主从架构集群</li>
+<li>一般一个HDFS集群是有一个Namenode和一定数目的Datanode组成</li>
+<li>Namenode是HDFS主节点，Datanode是HDFS从节点，两种角色各司其职，共同协调完成分布式的文件存储服务</li>
+<li>HDFS中的文件在物理上是分块存储的，默认大小是128M，不足128M则本身就是一块</li>
+<li>文件的所有块都会有副本，默认值是3份（包括自身）</li>
+<li>元数据管理<ul>
+<li>Namenode管理的元数据具有两种类型：<ul>
+<li>文件自身属性信息：文件名称、权限，修改时间，文件大小，复制因子，数据块大小</li>
+<li>文件块位置映射信息：记录文件块和DataNode之间的映射信息，即哪个块位于哪个节点上</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h3><p> 一般可用UI界面和shell命令操作HDFS，常用命令如下：</p>
+<ul>
+<li><code>hadoop fs -mkdir /name：</code>创建目录</li>
+<li><code>hadoop fs -put ...</code>：上传文件</li>
+<li><code>hadoop fs -get ...</code>：下载文件</li>
+</ul>
+<h3 id="角色及职责"><a href="#角色及职责" class="headerlink" title="角色及职责"></a>角色及职责</h3><ul>
+<li>NameNode<ul>
+<li>是Hadoop分布式文件系统的核心，架构中的主角色</li>
+<li>NameNode维护和管理文件系统元数据，包括名称空间目录树结构、文件和块的位置信息、访问权限等信息</li>
+<li>NameNode成为了访问HDFS的唯一入口</li>
+<li>仅存储HDFS的元数据,不存储实际数据</li>
+<li>不持久化存储每个文件中各个块所在的datanode的位置信息。开机时从datenode重建</li>
+</ul>
+</li>
+<li>DataNode<ul>
+<li>是Hadoop HDFS中的从角色，负责具体的数据块存储</li>
+<li>DataNode的数量决定了HDFS集群的整体数据存储能力。通过和NameNode配合维护着数据块</li>
+<li>启动时，会将自己注册到NameNode并汇报自己负责持有的块列表</li>
+</ul>
+</li>
+<li>secondarynamenode<ul>
+<li>主角色辅助角色</li>
+<li>主要是帮助主角色进行元数据文件的合并动作</li>
+</ul>
+</li>
+</ul>
+<h2 id="YARN"><a href="#YARN" class="headerlink" title="YARN"></a>YARN</h2><h3 id="简介-2"><a href="#简介-2" class="headerlink" title="简介"></a>简介</h3><ul>
+<li><p>是一个通用资源管理系统和调度平台，可为上层应用提供统一的资源管理和调度</p>
+</li>
+<li><p>功能：</p>
+<ul>
+<li>资源管理系统：集群的硬件资源，和程序运行相关，比如内存、CPU等</li>
+<li>调度平台：多个程序同时申请计算资源如何分配，调度的规则</li>
+<li>理论上支持各种计算程序</li>
+</ul>
+</li>
+<li><p>可以把Hadoop YARN理解为相当于一个分布式的操作系统平台，而MapReduce等计算程序则相当于运行于操作系统之上的应用程序，YARN为这些程序提供运算所需的资源</p>
+</li>
+</ul>
+<h3 id="三大组件"><a href="#三大组件" class="headerlink" title="三大组件"></a>三大组件</h3><ul>
+<li>ResourceManager（RM）<ul>
+<li>YARN集群中的主角色，决定系统中所有应用程序之间资源分配的最终权限，即最终仲裁者</li>
+<li>接收用户的作业提交，并通过NM分配、管理各个机器上的计算资源</li>
+</ul>
+</li>
+<li>NodeManager（NM）<ul>
+<li>YARN中的从角色，一台机器上一个，负责管理本机器上的计算资源</li>
+<li>根据RM命令，启动Container容器、监视容器的资源使用情况。并且向RM主角色汇报资源使用情况</li>
+</ul>
+</li>
+<li>ApplicationMaster（AM）<ul>
+<li>用户提交的每个应用程序均包含一个AM</li>
+<li>负责程序内部各阶段的资源申请，监督程序的执行情况</li>
+</ul>
+</li>
+</ul>
+<h3 id="整体流程"><a href="#整体流程" class="headerlink" title="整体流程"></a>整体流程</h3><ul>
+<li>第一个阶段是客户端申请资源启动运行本次程序的ApplicationMaster</li>
+<li>第二个阶段是由ApplicationMaster根据本次程序内部具体情况，为它申请资源，并监控它的整个运行过程，直到运行完成。</li>
+</ul>
+<h3 id="调度器策略"><a href="#调度器策略" class="headerlink" title="调度器策略"></a>调度器策略</h3><ul>
+<li>FIFO Scheduler（先进先出调度器）</li>
+<li>Capacity Scheduler（容量调度器，Apache版本YARN默认使用该策略）：可以理解成一个个的资源队列，这个资源队列是用户自己去分配的。队列内部又可以垂直划分，这样一个组织内部的多个成员就可以共享这个队列资源了，在一个队列内部，资源的调度是采用的是先进先出(FIFO)策略。简单通俗点来说，就是一个个队列有独立的资源，队列的结构和资源是可以进行配置的。</li>
+<li>Fair Scheduler（公平调度器）：为所有的应用分配公平的资源</li>
+</ul>
+<h2 id="数据仓库"><a href="#数据仓库" class="headerlink" title="数据仓库"></a>数据仓库</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><ul>
+<li>是一个用于存储、分析、报告的数据系统</li>
+<li>目的是构建面向分析的集成化数据环境，分析结果为企业提供决策支持</li>
+<li>数据仓库本身并不“生产”任何数据，其数据来源于不同外部系统</li>
+<li>数据仓库自身也不需要“消费”任何的数据，其结果开放给各个外部应用使用</li>
+<li>为了分析数据而来，分析结果给企业决策提供支撑</li>
+<li>特征：<ul>
+<li>面向主题、集成性、非易失性、时变性</li>
+</ul>
+</li>
+</ul>
+<h2 id="Apache-Hive"><a href="#Apache-Hive" class="headerlink" title="Apache Hive"></a>Apache Hive</h2><h3 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h3><p> Apache Hive是一款建立在Hadoop之上的开源数据仓库系统，可以将存储在Hadoop文件中的结构化、半结构化数据文件映射为一张数据库表，基于表提供了一种类似SQL的查询模型，称为Hive查询语言（HQL），用于访问和分析存储在Hadoop文件中的大型数据集。</p>
+<p> Hive核心是将HQL转换为MapReduce程序，然后将程序提交到Hadoop群集执行。</p>
+<ul>
+<li>Hive利用HDFS存储数据，利用MapReduce查询分析数据。</li>
+<li>Hive的最大的魅力在于用户专注于编写HQL，Hive帮您转换成为MapReduce程序完成对数据的分析</li>
+<li>在hive中能够写sql处理的前提是针对表，而不是针对文件，因此需要将文件和表之间的对应关系描述记录清楚。映射信息专业的叫法称之为元数据信息</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Nuyoah-xlh/jsDelivr-CDN/img/article_pic/Snipaste_2022-10-24_20-47-46.jpg" alt="0.jpg"></p>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p> 元数据，又称中介数据、中继数据，为描述数据的数据，主要是描述数据属性的信息，用来支持如指示存储位置、历史数据、资源查找、文件记录等功能。元数据存储在关系型数据库中。</p>
+<h4 id="Hive-Metastore"><a href="#Hive-Metastore" class="headerlink" title="Hive Metastore"></a>Hive Metastore</h4><ul>
+<li><p>Metastore即元数据服务。Metastore服务的作用是管理metadata元数据，对外暴露服务地址，让各种客户端通过连接metastore服务，由metastore再去连接MySQL数据库来存取元数据。且不需要知道数据库的密码等信息，更安全。</p>
+</li>
+<li><p>前台启动：<code>[root@node1 ~]# /export/server/apache-hive-3.1.2-bin/bin/hive --service hiveserver2</code></p>
+</li>
+<li><p>后台启动：<code>[root@node1 ~]# nohup /export/server/apache-hive-3.1.2-bin/bin/hive --service metastore &amp;</code></p>
+</li>
+<li><p>客户端，两种，推荐第二代</p>
+</li>
+</ul>
+<h4 id="bin-beeline客户端使用"><a href="#bin-beeline客户端使用" class="headerlink" title="bin&#x2F;beeline客户端使用"></a>bin&#x2F;beeline客户端使用</h4><ul>
+<li>启动第二代客户端</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">nohup</span> /export/server/apache-hive-3.1.2-bin/bin/hive --service metastore &amp;</span><br><span class="line"><span class="built_in">nohup</span> /export/server/apache-hive-3.1.2-bin/bin/hive --service hiveserver2 &amp;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>拷贝node1安装包到beeline客户端机器上（node3）:<code>scp -r /export/server/apache-hive-3.1.2-bin/ node3:/export/server/</code></li>
+<li>在node3启动客户端：<code>[root@node3 server]# /export/server/apache-hive-3.1.2-bin/bin/beeline</code></li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">beeline&gt; ! connect jdbc:hive2://node1:10000</span><br><span class="line">Connecting to jdbc:hive2://node1:10000</span><br><span class="line">Enter username <span class="keyword">for</span> jdbc:hive2://node1:10000: root</span><br><span class="line">Enter password <span class="keyword">for</span> jdbc:hive2://node1:10000: </span><br><span class="line">Connected to: Apache Hive (version 3.1.2)</span><br><span class="line">Driver: Hive JDBC (version 3.1.2)</span><br><span class="line">Transaction isolation: TRANSACTION_REPEATABLE_READ</span><br><span class="line">0: jdbc:hive2://node1:10000&gt; </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>一般可使用DataGrip连接hive</strong></li>
+</ul>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><ul>
+<li><p>默认分隔符：’\001’</p>
+</li>
+<li><p>row format delimited fields terminated by 指定字段之间的分隔符</p>
+</li>
+<li><p>在Hive中，默认的数据库叫做default，存储数据位置位于HDFS的&#x2F;user&#x2F;hive&#x2F;warehouse下</p>
+</li>
+<li><p>用户自己创建的数据库存储位置是&#x2F;user&#x2F;hive&#x2F;warehouse&#x2F;database_name.db下</p>
+</li>
+<li><p>只有把数据文件移动到对应的表文件夹下面，Hive才能映射解析成功;</p>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">xlh</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/post/67914616.html">http://example.com/post/67914616.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">xlhの博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%90%8E%E7%AB%AF%E5%B7%A5%E5%85%B7-%E6%A1%86%E6%9E%B6/">后端工具/框架</a></div><div class="post_share"><div class="social-share" data-image="/image/pics/pic%20(30).jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/post/7ddba8c7.html" title="vue-admin-template实现登录"><img class="cover" src="/image/pics/pic%20(52).jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">vue-admin-template实现登录</div></div></a></div><div class="next-post pull-right"><a href="/post/cd261659.html" title="Hibernate Validator参数校验&amp;自定义注解"><img class="cover" src="/image/pics/pic%20(31).jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hibernate Validator参数校验&amp;自定义注解</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/post/30e1f2b1.html" title="SpringMVC入门"><img class="cover" src="/image/pics/pic%20(48).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-06</div><div class="title">SpringMVC入门</div></div></a></div><div><a href="/post/b309495f.html" title="Docker入门笔记"><img class="cover" src="/image/pics/pic%20(26).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-24</div><div class="title">Docker入门笔记</div></div></a></div><div><a href="/post/cd261659.html" title="Hibernate Validator参数校验&amp;自定义注解"><img class="cover" src="/image/pics/pic%20(31).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-20</div><div class="title">Hibernate Validator参数校验&amp;自定义注解</div></div></a></div><div><a href="/post/419d96b2.html" title="IDEA使用技巧"><img class="cover" src="/image/pics/pic%20(32).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-25</div><div class="title">IDEA使用技巧</div></div></a></div><div><a href="/post/d4b96000.html" title="Java基础-重点篇"><img class="cover" src="/image/pics/pic%20(33).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-06</div><div class="title">Java基础-重点篇</div></div></a></div><div><a href="/post/60a47b20.html" title="MyBatisPlus入门"><img class="cover" src="/image/pics/pic%20(36).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-09</div><div class="title">MyBatisPlus入门</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/image/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">xlh</div><div class="author-info__description">阅世而定心</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hadoop%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA"><span class="toc-number">2.</span> <span class="toc-text">Hadoop集群搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">2.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8"><span class="toc-number">2.2.</span> <span class="toc-text">启动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hadoop%E4%BD%93%E9%AA%8C"><span class="toc-number">2.3.</span> <span class="toc-text">Hadoop体验</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HDFS"><span class="toc-number">3.</span> <span class="toc-text">HDFS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B-1"><span class="toc-number">3.1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87"><span class="toc-number">3.2.</span> <span class="toc-text">设计目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E6%9E%84"><span class="toc-number">3.3.</span> <span class="toc-text">结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C"><span class="toc-number">3.4.</span> <span class="toc-text">常用操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%92%E8%89%B2%E5%8F%8A%E8%81%8C%E8%B4%A3"><span class="toc-number">3.5.</span> <span class="toc-text">角色及职责</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#YARN"><span class="toc-number">4.</span> <span class="toc-text">YARN</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B-2"><span class="toc-number">4.1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E5%A4%A7%E7%BB%84%E4%BB%B6"><span class="toc-number">4.2.</span> <span class="toc-text">三大组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B"><span class="toc-number">4.3.</span> <span class="toc-text">整体流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E5%BA%A6%E5%99%A8%E7%AD%96%E7%95%A5"><span class="toc-number">4.4.</span> <span class="toc-text">调度器策略</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93"><span class="toc-number">5.</span> <span class="toc-text">数据仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-number">5.1.</span> <span class="toc-text">概念</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Apache-Hive"><span class="toc-number">6.</span> <span class="toc-text">Apache Hive</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5-1"><span class="toc-number">6.1.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-number">6.2.</span> <span class="toc-text">使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Hive-Metastore"><span class="toc-number">6.2.1.</span> <span class="toc-text">Hive Metastore</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#bin-beeline%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%BD%BF%E7%94%A8"><span class="toc-number">6.2.2.</span> <span class="toc-text">bin&#x2F;beeline客户端使用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95"><span class="toc-number">6.3.</span> <span class="toc-text">语法</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/d3df16b0.html" title="SSM框架整合"><img src="/image/pics/pic%20(50).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSM框架整合"/></a><div class="content"><a class="title" href="/post/d3df16b0.html" title="SSM框架整合">SSM框架整合</a><time datetime="2024-06-12T11:26:31.000Z" title="发表于 2024-06-12 19:26:31">2024-06-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/30e1f2b1.html" title="SpringMVC入门"><img src="/image/pics/pic%20(49).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringMVC入门"/></a><div class="content"><a class="title" href="/post/30e1f2b1.html" title="SpringMVC入门">SpringMVC入门</a><time datetime="2024-06-11T14:02:07.000Z" title="发表于 2024-06-11 22:02:07">2024-06-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/7ddba8c7.html" title="vue-admin-template实现登录"><img src="/image/pics/pic%20(52).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue-admin-template实现登录"/></a><div class="content"><a class="title" href="/post/7ddba8c7.html" title="vue-admin-template实现登录">vue-admin-template实现登录</a><time datetime="2023-03-29T09:23:31.000Z" title="发表于 2023-03-29 17:23:31">2023-03-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/67914616.html" title="Hadoop入门"><img src="/image/pics/pic%20(30).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hadoop入门"/></a><div class="content"><a class="title" href="/post/67914616.html" title="Hadoop入门">Hadoop入门</a><time datetime="2022-10-20T09:19:24.000Z" title="发表于 2022-10-20 17:19:24">2022-10-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/cd261659.html" title="Hibernate Validator参数校验&amp;自定义注解"><img src="/image/pics/pic%20(31).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hibernate Validator参数校验&amp;自定义注解"/></a><div class="content"><a class="title" href="/post/cd261659.html" title="Hibernate Validator参数校验&amp;自定义注解">Hibernate Validator参数校验&amp;自定义注解</a><time datetime="2022-10-20T09:16:45.000Z" title="发表于 2022-10-20 17:16:45">2022-10-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By xlh</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>xlhの博客</title><meta name="author" content="xlh"><meta name="copyright" content="xlh"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="阅世而定心">
+<meta property="og:type" content="website">
+<meta property="og:title" content="xlhの博客">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="xlhの博客">
+<meta property="og:description" content="阅世而定心">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/image/head.jpg">
+<meta property="article:author" content="xlh">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/image/head.jpg"><link rel="shortcut icon" href="/image/logo.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":false,"highlightLang":true,"highlightHeightLimit":280},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'xlhの博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-09-27 13:55:21'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/image/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/image/top1.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="xlhの博客"><img class="site-icon" src="/image/logo.png"/><span class="site-name">xlhの博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">xlhの博客</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/post/d3df16b0.html" title="SSM框架整合"><img class="post-bg" src="/image/pics/pic%20(50).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSM框架整合"></a></div><div class="recent-post-info"><a class="article-title" href="/post/d3df16b0.html" title="SSM框架整合">SSM框架整合</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-06-12T11:26:31.000Z" title="发表于 2024-06-12 19:26:31">2024-06-12</time></span></div><div class="content">数据库
+SSM快速整合（推荐） Spring MVC负责实现MVC设计模式， Mybatis负责数据持久， Spring负责管理 Spring MVC和Mybatis相关对象的创建和依赖注入。
+
+创建Maven工程
+使用模板
+
+
+
+引入依赖
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798991001011021031041051061071081091101111121131141151161171181191201211221231241251261271281291301311321331341351361371381391401411421431441451461471481491501511521531541551561571581591601611621 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/30e1f2b1.html" title="SpringMVC入门"><img class="post-bg" src="/image/pics/pic%20(49).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringMVC入门"></a></div><div class="recent-post-info"><a class="article-title" href="/post/30e1f2b1.html" title="SpringMVC入门">SpringMVC入门</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-06-11T14:02:07.000Z" title="发表于 2024-06-11 22:02:07">2024-06-11</time></span></div><div class="content">什么是SpringMVCSpringMVC是Spring的一个后续产品，是Spring的一个子项目
+SpringMVC 是 Spring 为表述层开发提供的一整套完备的解决方案。在表述层框架历经 Strust、WebWork、Strust2 等诸多产品的历代更迭之后，目前业界普遍选择了 SpringMVC 作为 Java EE 项目表述层开发的首选方案。
+典型MVC: 模型（dao+service）、视图（jsp）、控制器（Controller）
+springmvc模式：
+
+开始创建maven（web）工程
+创建一个模块
+
+在模块pom.xml修改打包方式
+12&lt;!--web工程需要打包为.war包--&gt;&lt;packaging&gt;war&lt;/packaging&gt;
+
+引入依赖
+123456789101112131415161718192021222324252627282930&lt;dependencies&gt;    &lt;!-- SpringMVC --&gt;    &lt;dependency&gt;        &lt;groupId&gt ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/post/7ddba8c7.html" title="vue-admin-template实现登录"><img class="post-bg" src="/image/pics/pic%20(52).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue-admin-template实现登录"></a></div><div class="recent-post-info"><a class="article-title" href="/post/7ddba8c7.html" title="vue-admin-template实现登录">vue-admin-template实现登录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-29T09:23:31.000Z" title="发表于 2023-03-29 17:23:31">2023-03-29</time></span></div><div class="content">前端
+修改src/utils/request.js，以使登录请求正确发送到后端
+
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970import axios from &#x27;axios&#x27;import &#123; MessageBox, Message &#125; from &#x27;element-ui&#x27;import store from &#x27;@/store&#x27;import &#123; getToken &#125; from &#x27;@/utils/auth&#x27;// create an axios instanceconst service = axios.create(&#123;  baseURL:  &#x27;http://localhost:8201/&#x27;,  timeout: 5000 // r ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/67914616.html" title="Hadoop入门"><img class="post-bg" src="/image/pics/pic%20(30).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hadoop入门"></a></div><div class="recent-post-info"><a class="article-title" href="/post/67914616.html" title="Hadoop入门">Hadoop入门</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-20T09:19:24.000Z" title="发表于 2022-10-20 17:19:24">2022-10-20</time></span></div><div class="content">简介 Hadoop是一款开源软件，允许用户使用简单的编程模型实现跨机器集群对海量数据进行分布式计算处理。
+核心组件：
+
+Hadoop HDFS（分布式文件存储系统）：解决海量数据存储
+Hadoop YARN（集群资源管理和任务调度框架）：解决资源任务调度
+Hadoop MapReduce（分布式计算框架）：解决海量数据计算
+
+现状：
+
+HDFS作为分布式文件存储系统，处在生态圈的底层与核心地位；
+YARN作为分布式通用的集群资源管理系统和任务调度平台，支撑各种计算引擎运行，保证了Hadoop地位；
+MapReduce作为大数据生态圈第一代分布式计算引擎，由于自身设计的模型所产生的弊端，导致企业一线几乎不再直接使用MapReduce进行编程处理，但是很多软件的底层依然在使用MapReduce引擎来处理数据。
+
+发行版本：
+
+Apache开源社区版本：https://hadoop.apache.org/
+
+Hadoop集群搭建概述
+Hadoop集群包括两个集群：HDFS集群、YARN集群
+两个集群逻辑上分离、通常物理上在一起
+两个集群都是标准的主从架构集群
+
+
+启动
+在主机上执行start ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/post/cd261659.html" title="Hibernate Validator参数校验&amp;自定义注解"><img class="post-bg" src="/image/pics/pic%20(31).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hibernate Validator参数校验&amp;自定义注解"></a></div><div class="recent-post-info"><a class="article-title" href="/post/cd261659.html" title="Hibernate Validator参数校验&amp;自定义注解">Hibernate Validator参数校验&amp;自定义注解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-20T09:16:45.000Z" title="发表于 2022-10-20 17:16:45">2022-10-20</time></span></div><div class="content">简介 后端常常会需要对参数进行校验，这里提供两种处理校验逻辑的方式。一种是使用Hibernate Validator来处理，另一种是使用全局异常来处理。对于前者，还可以使用自定义注解进行参数校验。
+Hibernate Validator Hibernate Validator是 SpringBoot 内置的校验框架，只要集成了 SpringBoot 就自动集成了它，我们可以通过在对象上面使用它提供的注解来完成参数校验。
+常用注解
+@Null：被注释的属性必须为null；
+@NotNull：被注释的属性不能为null；
+@AssertTrue：被注释的属性必须为true；
+@AssertFalse：被注释的属性必须为false；
+@Min：被注释的属性必须大于等于其value值；
+@Max：被注释的属性必须小于等于其value值；
+@Size：被注释的属性必须在其min和max值之间；
+@Pattern：被注释的属性必须符合其regexp所定义的正则表达式；
+@NotBlank：被注释的字符串不能为空字符串；
+@NotEmpty：被注释的属性不能为空；
+@Email：被注释的属性必须符合 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/15408d89.html" title="Spring-Security入门"><img class="post-bg" src="/image/pics/pic%20(45).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring-Security入门"></a></div><div class="recent-post-info"><a class="article-title" href="/post/15408d89.html" title="Spring-Security入门">Spring-Security入门</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-16T09:13:37.000Z" title="发表于 2022-10-16 17:13:37">2022-10-16</time></span></div><div class="content">认证和授权认证（authentication） 认证意味着确认你自己的身份，是关于验证你的凭据，如用户名&#x2F;邮箱和密码，以验证访问者的身份。系统确定你是否就是你所说的使用凭据。常见的认证方式有：
+
+手机和短信验证码认证
+用户名密码认证
+邮箱和邮件验证码认证
+
+ 授权意味着授予对系统的访问权限。授权发生在系统完成身份认证之后，最终会授予你访问资源（如信息，文件，数据库，资金，位置，几乎任何内容）的完全权限。简单来说，授权决定了你访问系统的能力以及达到的程度。
+ 授权是确定经过身份验证的用户是否可以访问特定资源的过程。就像给予某人官方许可做某事或任何事情。
+Spring Security简介 Spring Security是 Spring 家族中的一个安全管理框架，是一个功能强大且高度可定制的身份验证和访问控制框架。认证和授权就是Spring Security作为安全框架的核心功能。
+官方文档地址：https://spring.io/projects/spring-security/#learn
+小试牛刀导入依赖 创建一个 Spring Boot 的 web 项目，并导入部分依赖， ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/post/c0aa0d13.html" title="解决-Vue项目启动报错"><img class="post-bg" src="/image/pics/pic%20(19).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="解决-Vue项目启动报错"></a></div><div class="recent-post-info"><a class="article-title" href="/post/c0aa0d13.html" title="解决-Vue项目启动报错">解决-Vue项目启动报错</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-09T09:09:43.000Z" title="发表于 2022-10-09 17:09:43">2022-10-09</time></span></div><div class="content">问题记录在启动一个 Vue 项目时，出现如下报错：
+
+
+问题解决
+可能原因：电脑缺少cmd运行程序的环境变量
+解决方法：在环境变量 Path 中加入 C:\Windows\System32 和 %SystemRoot%\system32;（注意加分号），然后重启电脑；
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/d0cd96c7.html" title="Vue-Ajax(axios)"><img class="post-bg" src="/image/pics/pic%20(53).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue-Ajax(axios)"></a></div><div class="recent-post-info"><a class="article-title" href="/post/d0cd96c7.html" title="Vue-Ajax(axios)">Vue-Ajax(axios)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-09T08:44:45.000Z" title="发表于 2022-10-09 16:44:45">2022-10-09</time></span></div><div class="content">GET示例12345678910111213141516171819new Vue(&#123;  el: &#x27;#app&#x27;,  data () &#123;    return &#123;      info: null    &#125;  &#125;,  // 钩子函数，实例化时触发  mounted () &#123;    axios      .get(&#x27;https://www.runoob.com/try/ajax/json_demo.json&#x27;)      .then(response =&gt; (this.info = response))      .catch(function (error) &#123; // 请求失败处理        console.log(error);      &#125;);  &#125;&#125;)&lt;script src=&quot;https://unpkg.com/axios/dist/axios.min.js&quot;&gt;&lt;/script&gt;
+
+POST示例 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/post/59efbb61.html" title="【面试题】多线程实现有序执行"><img class="post-bg" src="/image/pics/pic%20(1).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【面试题】多线程实现有序执行"></a></div><div class="recent-post-info"><a class="article-title" href="/post/59efbb61.html" title="【面试题】多线程实现有序执行">【面试题】多线程实现有序执行</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-04-21T08:24:28.000Z" title="发表于 2022-04-21 16:24:28">2022-04-21</time></span></div><div class="content">有线程A，B，C，C 要等A和B都执行完了才执行，怎么实现？LockSupport + AtomicInteger 先执行线程C，用 park() 挂起线程C，线程A、B各自执行完成时，flag 减1并判断是否为0，若为0则用unpark(c)给线程C颁发许可。
+
+LockSupport.park() 函数表示挂起当前线程
+LockSupport.unpark(c) 函数表示解除线程c的阻塞状态
+AtomicInteger.decrementAndGet() 函数表示将该变量减一，并返回当前变量值（线程安全的原子类）
+
+1234567891011121314151617181920212223242526272829303132333435363738public static void main(String[] args) &#123;        AtomicInteger flag = new AtomicInteger(2);        Thread c =  new Thread(()-&gt;&#123;            System.out.println( ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/d41ccd0c.html" title="阿里云OSS体验"><img class="post-bg" src="/image/pics/pic%20(6).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="阿里云OSS体验"></a></div><div class="recent-post-info"><a class="article-title" href="/post/d41ccd0c.html" title="阿里云OSS体验">阿里云OSS体验</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-24T08:12:23.000Z" title="发表于 2022-02-24 16:12:23">2022-02-24</time></span></div><div class="content">一、阿里云oss简介 用户认证需要上传证件图片、首页轮播也需要上传图片，因此我们要做文件服务，阿里云oss是一个很好的分布式文件服务系统，只需要集成阿里云oss即可。
+二、开通“对象存储OSS”服务
+申请阿里云账号
+实名认证
+开通“对象存储OSS”服务
+进入管理控制台
+
+三、创建Bucket选择：标准存储、公共读、不开通，如下：
+
+四、获取用户acesskeys
+五、使用SDK文档
+六、开始1、搭建service-oss模块
+修改pom.xml，引入阿里云oss依赖
+
+12345678910111213&lt;dependencies&gt;       &lt;!-- 阿里云oss依赖 --&gt;       &lt;dependency&gt;           &lt;groupId&gt;com.aliyun.oss&lt;/groupId&gt;           &lt;artifactId&gt;aliyun-sdk-oss&lt;/artifactId&gt;       &lt;/dependency&gt;       &lt;!-- 日期工具栏依赖 --&g ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/#content-inner">4</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/image/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">xlh</div><div class="author-info__description">阅世而定心</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/d3df16b0.html" title="SSM框架整合"><img src="/image/pics/pic%20(50).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSM框架整合"/></a><div class="content"><a class="title" href="/post/d3df16b0.html" title="SSM框架整合">SSM框架整合</a><time datetime="2024-06-12T11:26:31.000Z" title="发表于 2024-06-12 19:26:31">2024-06-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/30e1f2b1.html" title="SpringMVC入门"><img src="/image/pics/pic%20(49).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringMVC入门"/></a><div class="content"><a class="title" href="/post/30e1f2b1.html" title="SpringMVC入门">SpringMVC入门</a><time datetime="2024-06-11T14:02:07.000Z" title="发表于 2024-06-11 22:02:07">2024-06-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/7ddba8c7.html" title="vue-admin-template实现登录"><img src="/image/pics/pic%20(52).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue-admin-template实现登录"/></a><div class="content"><a class="title" href="/post/7ddba8c7.html" title="vue-admin-template实现登录">vue-admin-template实现登录</a><time datetime="2023-03-29T09:23:31.000Z" title="发表于 2023-03-29 17:23:31">2023-03-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/67914616.html" title="Hadoop入门"><img src="/image/pics/pic%20(30).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hadoop入门"/></a><div class="content"><a class="title" href="/post/67914616.html" title="Hadoop入门">Hadoop入门</a><time datetime="2022-10-20T09:19:24.000Z" title="发表于 2022-10-20 17:19:24">2022-10-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/cd261659.html" title="Hibernate Validator参数校验&amp;自定义注解"><img src="/image/pics/pic%20(31).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hibernate Validator参数校验&amp;自定义注解"/></a><div class="content"><a class="title" href="/post/cd261659.html" title="Hibernate Validator参数校验&amp;自定义注解">Hibernate Validator参数校验&amp;自定义注解</a><time datetime="2022-10-20T09:16:45.000Z" title="发表于 2022-10-20 17:16:45">2022-10-20</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Git-GitHub/" style="font-size: 1.2em; color: #999da3">Git/GitHub</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6-%E5%B7%A5%E5%85%B7/" style="font-size: 1.4em; color: #99a5b6">前端框架/工具</a> <a href="/tags/PS-PR/" style="font-size: 1.2em; color: #999da3">PS/PR</a> <a href="/tags/%E5%90%8E%E7%AB%AF%E5%B7%A5%E5%85%B7-%E6%A1%86%E6%9E%B6/" style="font-size: 1.5em; color: #99a9bf">后端工具/框架</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E5%85%B7-%E6%A1%86%E6%9E%B6/" style="font-size: 1.1em; color: #999">前端工具/框架</a> <a href="/tags/QT-C/" style="font-size: 1.1em; color: #999">QT/C++</a> <a href="/tags/Linux/" style="font-size: 1.1em; color: #999">Linux</a> <a href="/tags/%E6%B1%82%E8%81%8C/" style="font-size: 1.1em; color: #999">求职</a> <a href="/tags/%E5%8D%9A%E5%AE%A2-%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/" style="font-size: 1.2em; color: #999da3">博客/博客优化</a> <a href="/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" style="font-size: 1.3em; color: #99a1ac">问题解决</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/06/"><span class="card-archive-list-date">六月 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">十月 2022</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/02/"><span class="card-archive-list-date">二月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/01/"><span class="card-archive-list-date">一月 2022</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/10/"><span class="card-archive-list-date">十月 2021</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">39</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2020-01-08T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">109.8k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-09-27T05:55:21.495Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By xlh</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["阅世而定心","See the world, calm your mind."])
+  } else {
+    document.getElementById("subtitle").textContent = "阅世而定心"
+  }
+}
+typedJSFn.run(subtitleType)</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
